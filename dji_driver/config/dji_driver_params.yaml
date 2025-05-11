@@ -1,0 +1,32 @@
+/**:
+  ros__parameters:
+    # 串口配置
+    control_serial:      # 控制命令串口
+      port: "/dev/ttyUSB0"  # 串口设备名
+      baud_rate: 115200     # 波特率
+      timeout: 0.1          # 超时时间(秒)
+      
+    encoder_serial:      # 编码器数据串口
+      port: "/dev/ttyUSB1"  # 串口设备名
+      baud_rate: 115200     # 波特率
+      timeout: 0.1          # 超时时间(秒)
+
+    # 速度参数配置
+    velocity:
+      # 线速度配置
+      linear:
+        x:
+          offset: 0.0       # Vx偏移量
+          max: 1.0          # Vx最大值
+        y:
+          offset: 0.0       # Vy偏移量
+          max: 1.0          # Vy最大值
+      
+      # 角速度配置
+      angular:
+        z:
+          offset: 0.0       # Wz偏移量
+          max: 1.0          # Wz最大值
+
+    # 其他配置
+    debug: false            # 调试模式开关 

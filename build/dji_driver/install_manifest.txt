@@ -1,0 +1,17 @@
+/home/yinzi/DJI_ws/install/dji_driver/lib/dji_driver/dji_driver_node
+/home/yinzi/DJI_ws/install/dji_driver/share/dji_driver/config/dji_driver_params.yaml
+/home/yinzi/DJI_ws/install/dji_driver/share/ament_index/resource_index/package_run_dependencies/dji_driver
+/home/yinzi/DJI_ws/install/dji_driver/share/ament_index/resource_index/parent_prefix_path/dji_driver
+/home/yinzi/DJI_ws/install/dji_driver/share/dji_driver/environment/ament_prefix_path.sh
+/home/yinzi/DJI_ws/install/dji_driver/share/dji_driver/environment/ament_prefix_path.dsv
+/home/yinzi/DJI_ws/install/dji_driver/share/dji_driver/environment/path.sh
+/home/yinzi/DJI_ws/install/dji_driver/share/dji_driver/environment/path.dsv
+/home/yinzi/DJI_ws/install/dji_driver/share/dji_driver/local_setup.bash
+/home/yinzi/DJI_ws/install/dji_driver/share/dji_driver/local_setup.sh
+/home/yinzi/DJI_ws/install/dji_driver/share/dji_driver/local_setup.zsh
+/home/yinzi/DJI_ws/install/dji_driver/share/dji_driver/local_setup.dsv
+/home/yinzi/DJI_ws/install/dji_driver/share/dji_driver/package.dsv
+/home/yinzi/DJI_ws/install/dji_driver/share/ament_index/resource_index/packages/dji_driver
+/home/yinzi/DJI_ws/install/dji_driver/share/dji_driver/cmake/dji_driverConfig.cmake
+/home/yinzi/DJI_ws/install/dji_driver/share/dji_driver/cmake/dji_driverConfig-version.cmake
+/home/yinzi/DJI_ws/install/dji_driver/share/dji_driver/package.xml

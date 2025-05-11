@@ -1,0 +1,10 @@
+/home/yinzi/DJI_ws/build/dji_driver/CMakeFiles/uninstall.dir
+/home/yinzi/DJI_ws/build/dji_driver/CMakeFiles/dji_driver_uninstall.dir
+/home/yinzi/DJI_ws/build/dji_driver/CMakeFiles/dji_driver_node.dir
+/home/yinzi/DJI_ws/build/dji_driver/CMakeFiles/test.dir
+/home/yinzi/DJI_ws/build/dji_driver/CMakeFiles/edit_cache.dir
+/home/yinzi/DJI_ws/build/dji_driver/CMakeFiles/rebuild_cache.dir
+/home/yinzi/DJI_ws/build/dji_driver/CMakeFiles/list_install_components.dir
+/home/yinzi/DJI_ws/build/dji_driver/CMakeFiles/install.dir
+/home/yinzi/DJI_ws/build/dji_driver/CMakeFiles/install/local.dir
+/home/yinzi/DJI_ws/build/dji_driver/CMakeFiles/install/strip.dir
