@@ -4,6 +4,15 @@
 namespace dji_driver
 {
 
+/**
+ * @brief 构造函数，初始化节点
+ * 
+ * 完成节点的初始化，包括：
+ * 1. 加载参数
+ * 2. 初始化串口连接
+ * 3. 设置订阅发布器
+ * 4. 创建定时器
+ */
 DJIDriverNode::DJIDriverNode()
 : Node("dji_driver_node"), control_connected_(false), encoder_connected_(false)
 {
@@ -23,6 +32,14 @@ DJIDriverNode::DJIDriverNode()
     RCLCPP_INFO(this->get_logger(), "DJIDriverNode has been initialized");
 }
 
+/**
+ * @brief 初始化参数
+ * 
+ * 声明并获取节点运行所需的各项参数：
+ * 1. 串口配置参数（端口、波特率、超时）
+ * 2. 速度参数（偏移量、最大值）
+ * 3. 调试模式开关
+ */
 void DJIDriverNode::init_parameters()
 {
     // 读取控制串口参数
@@ -67,6 +84,16 @@ void DJIDriverNode::init_parameters()
     debug_mode_ = this->get_parameter("debug").as_bool();
 }
 
+/**
+ * @brief 初始化串口连接
+ * 
+ * 根据配置参数初始化控制串口和编码器串口：
+ * 1. 设置串口参数（端口名、波特率、超时）
+ * 2. 尝试打开串口
+ * 3. 记录连接状态
+ * 
+ * @return bool 返回初始化结果，如果任一串口初始化失败则返回false
+ */
 bool DJIDriverNode::init_serial()
 {
     bool success = true;
@@ -102,6 +129,13 @@ bool DJIDriverNode::init_serial()
     return success;
 }
 
+/**
+ * @brief 初始化订阅和发布
+ * 
+ * 创建ROS2话题的订阅器和发布器：
+ * 1. 订阅cmd_vel话题，接收速度控制命令
+ * 2. 创建odom话题发布器，用于发布里程计信息
+ */
 void DJIDriverNode::init_subscriptions()
 {
     cmd_vel_sub_ = this->create_subscription<geometry_msgs::msg::Twist>(
@@ -110,6 +144,13 @@ void DJIDriverNode::init_subscriptions()
     odom_pub_ = this->create_publisher<nav_msgs::msg::Odometry>("odom", 10);
 }
 
+/**
+ * @brief 初始化定时器
+ * 
+ * 创建定时器用于周期性执行任务：
+ * 1. 编码器读取定时器：10ms周期，用于从串口读取编码器数据
+ * 2. 控制命令发送定时器：50ms周期，用于向串口发送控制命令
+ */
 void DJIDriverNode::init_timers()
 {
     // 创建定时器用于读取编码器数据
@@ -123,6 +164,16 @@ void DJIDriverNode::init_timers()
         std::bind(&DJIDriverNode::control_write_callback, this));
 }
 
+/**
+ * @brief 处理cmd_vel话题的回调函数
+ * 
+ * 当接收到新的速度命令时：
+ * 1. 应用偏移量和限制最大值
+ * 2. 更新当前命令结构体
+ * 3. 可选地输出调试信息
+ * 
+ * @param msg 接收到的Twist消息指针
+ */
 void DJIDriverNode::cmd_vel_callback(const geometry_msgs::msg::Twist::SharedPtr msg)
 {
     // 应用偏移量和限制最大值
@@ -136,6 +187,14 @@ void DJIDriverNode::cmd_vel_callback(const geometry_msgs::msg::Twist::SharedPtr 
     }
 }
 
+/**
+ * @brief 编码器读取定时器回调函数
+ * 
+ * 定期执行以从串口读取编码器数据：
+ * 1. 检查编码器串口连接状态
+ * 2. 尝试读取编码器数据
+ * 3. 处理读取到的数据
+ */
 void DJIDriverNode::encoder_read_callback()
 {
     if (!encoder_connected_) return;
@@ -145,6 +204,14 @@ void DJIDriverNode::encoder_read_callback()
     }
 }
 
+/**
+ * @brief 控制命令发送定时器回调函数
+ * 
+ * 定期执行以向串口发送控制命令：
+ * 1. 检查控制串口连接状态
+ * 2. 计算当前命令的校验和
+ * 3. 发送控制命令
+ */
 void DJIDriverNode::control_write_callback()
 {
     if (!control_connected_) return;
@@ -159,6 +226,16 @@ void DJIDriverNode::control_write_callback()
     write_control_data(current_cmd_);
 }
 
+/**
+ * @brief 从串口读取编码器数据
+ * 
+ * 尝试从编码器串口读取数据并解析：
+ * 1. 检查是否有足够的数据可读
+ * 2. 读取并解析数据
+ * 3. 验证数据有效性（帧头、帧尾、校验和）
+ * 
+ * @return bool 是否成功读取到有效数据
+ */
 bool DJIDriverNode::read_encoder_data()
 {
     // ===== [协议相关] 判断可用数据大小 =====
@@ -196,6 +273,17 @@ bool DJIDriverNode::read_encoder_data()
     return false;
 }
 
+/**
+ * @brief 向串口发送控制数据
+ * 
+ * 将控制命令结构体写入串口：
+ * 1. 尝试写入数据
+ * 2. 验证是否写入成功
+ * 3. 处理可能的异常
+ * 
+ * @param cmd 要发送的控制命令结构体
+ * @return bool 是否发送成功
+ */
 bool DJIDriverNode::write_control_data(const ControlCommand& cmd)
 {
     try {
@@ -212,6 +300,15 @@ bool DJIDriverNode::write_control_data(const ControlCommand& cmd)
     }
 }
 
+/**
+ * @brief 处理编码器数据
+ * 
+ * 对接收到的编码器数据进行处理：
+ * 1. 可选地输出调试信息
+ * 2. 调用编码器到里程计的转换函数
+ * 
+ * @param data 接收到的编码器数据结构体
+ */
 void DJIDriverNode::process_encoder_data(const EncoderData& data)
 {
     if (debug_mode_) {
@@ -222,6 +319,16 @@ void DJIDriverNode::process_encoder_data(const EncoderData& data)
     encoder_to_odom(data);
 }
 
+/**
+ * @brief 将编码器数据转换为里程计信息
+ * 
+ * 根据编码器数据计算机器人位姿变化，并发布里程计消息。
+ * 该函数需要根据实际机器人参数和运动学模型进行实现。
+ * 
+ * @param data 编码器数据结构体
+ * 
+ * @note 这是一个预留函数，用户需要根据实际机器人参数实现
+ */
 void DJIDriverNode::encoder_to_odom(const EncoderData& data)
 {
     // TODO: 用户实现编码器到里程计的计算
@@ -232,6 +339,19 @@ void DJIDriverNode::encoder_to_odom(const EncoderData& data)
 
 } // namespace dji_driver
 
+/**
+ * @brief 主函数
+ * 
+ * ROS2节点的入口点：
+ * 1. 初始化ROS2
+ * 2. 创建节点实例
+ * 3. 进入事件循环
+ * 4. 退出前清理资源
+ * 
+ * @param argc 命令行参数数量
+ * @param argv 命令行参数数组
+ * @return int 程序退出码
+ */
 int main(int argc, char * argv[])
 {
     rclcpp::init(argc, argv);

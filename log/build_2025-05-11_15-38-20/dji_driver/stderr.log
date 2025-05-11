@@ -1,4 +1,0 @@
-[01m[K/home/yinzi/DJI_ws/dji_driver/src/dji_driver_node.cpp:[m[K In member function ‘[01m[Kvoid dji_driver::DJIDriverNode::encoder_to_odom(const dji_driver::EncoderData&)[m[K’:
-[01m[K/home/yinzi/DJI_ws/dji_driver/src/dji_driver_node.cpp:225:56:[m[K [01;35m[Kwarning: [m[Kunused parameter ‘[01m[Kdata[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wunused-parameter-Wunused-parameter]8;;[m[K]
-  225 | void DJIDriverNode::encoder_to_odom([01;35m[Kconst EncoderData& data[m[K)
-      |                                     [01;35m[K~~~~~~~~~~~~~~~~~~~^~~~[m[K

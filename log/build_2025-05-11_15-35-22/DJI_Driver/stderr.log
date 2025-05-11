@@ -1,9 +1,0 @@
-WARNING: Package name "DJI_Driver" does not follow the naming conventions. It should start with a lower case letter and only contain lower case letters, digits, underscores, and dashes.
-In file included from [01m[K/home/yinzi/DJI_ws/DJI_Driver/src/dji_driver_node.cpp:1[m[K:
-[01m[K/home/yinzi/DJI_ws/DJI_Driver/include/DJI_Driver/dji_driver_node.hpp:7:10:[m[K [01;31m[Kfatal error: [m[Knav_msgs/msg/odometry.hpp: 没有那个文件或目录
-    7 | #include [01;31m[K<nav_msgs/msg/odometry.hpp>[m[K
-      |          [01;31m[K^~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K
-compilation terminated.
-gmake[2]: *** [CMakeFiles/dji_driver_node.dir/build.make:76：CMakeFiles/dji_driver_node.dir/src/dji_driver_node.cpp.o] 错误 1
-gmake[1]: *** [CMakeFiles/Makefile2:137：CMakeFiles/dji_driver_node.dir/all] 错误 2
-gmake: *** [Makefile:146：all] 错误 2
