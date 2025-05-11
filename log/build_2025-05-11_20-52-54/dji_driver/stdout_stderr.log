@@ -1,0 +1,13 @@
+[35m[1mConsolidate compiler generated dependencies of target dji_driver_node[0m
+[ 50%] [32mBuilding C object CMakeFiles/dji_driver_node.dir/src/CRC8_CRC16.c.o[0m
+[ 50%] [32mBuilding CXX object CMakeFiles/dji_driver_node.dir/src/dji_protocol.cpp.o[0m
+[ 75%] [32m[1mLinking CXX executable dji_driver_node[0m
+/usr/bin/ld: CMakeFiles/dji_driver_node.dir/src/dji_protocol.cpp.o: warning: relocation against `_ZN10dji_driver10CRC16_INITE' in read-only section `.text'
+/usr/bin/ld: CMakeFiles/dji_driver_node.dir/src/dji_protocol.cpp.o: in function `dji_driver::fill_checksums(dji_driver::ControlCommand&)':
+dji_protocol.cpp:(.text+0x13): undefined reference to `dji_driver::CRC8_INIT'
+/usr/bin/ld: dji_protocol.cpp:(.text+0x35): undefined reference to `dji_driver::CRC16_INIT'
+/usr/bin/ld: warning: creating DT_TEXTREL in a PIE
+collect2: error: ld returned 1 exit status
+gmake[2]: *** [CMakeFiles/dji_driver_node.dir/build.make:239：dji_driver_node] 错误 1
+gmake[1]: *** [CMakeFiles/Makefile2:137：CMakeFiles/dji_driver_node.dir/all] 错误 2
+gmake: *** [Makefile:146：all] 错误 2

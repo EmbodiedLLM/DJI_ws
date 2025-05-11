@@ -210,6 +210,30 @@ dji_driver_node/fast:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/dji_driver_node.dir/build.make CMakeFiles/dji_driver_node.dir/build
 .PHONY : dji_driver_node/fast
 
+src/CRC8_CRC16.o: src/CRC8_CRC16.c.o
+.PHONY : src/CRC8_CRC16.o
+
+# target to build an object file
+src/CRC8_CRC16.c.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/dji_driver_node.dir/build.make CMakeFiles/dji_driver_node.dir/src/CRC8_CRC16.c.o
+.PHONY : src/CRC8_CRC16.c.o
+
+src/CRC8_CRC16.i: src/CRC8_CRC16.c.i
+.PHONY : src/CRC8_CRC16.i
+
+# target to preprocess a source file
+src/CRC8_CRC16.c.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/dji_driver_node.dir/build.make CMakeFiles/dji_driver_node.dir/src/CRC8_CRC16.c.i
+.PHONY : src/CRC8_CRC16.c.i
+
+src/CRC8_CRC16.s: src/CRC8_CRC16.c.s
+.PHONY : src/CRC8_CRC16.s
+
+# target to generate assembly for a file
+src/CRC8_CRC16.c.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/dji_driver_node.dir/build.make CMakeFiles/dji_driver_node.dir/src/CRC8_CRC16.c.s
+.PHONY : src/CRC8_CRC16.c.s
+
 src/dji_driver_node.o: src/dji_driver_node.cpp.o
 .PHONY : src/dji_driver_node.o
 
@@ -274,6 +298,9 @@ help:
 	@echo "... dji_driver_uninstall"
 	@echo "... uninstall"
 	@echo "... dji_driver_node"
+	@echo "... src/CRC8_CRC16.o"
+	@echo "... src/CRC8_CRC16.i"
+	@echo "... src/CRC8_CRC16.s"
 	@echo "... src/dji_driver_node.o"
 	@echo "... src/dji_driver_node.i"
 	@echo "... src/dji_driver_node.s"

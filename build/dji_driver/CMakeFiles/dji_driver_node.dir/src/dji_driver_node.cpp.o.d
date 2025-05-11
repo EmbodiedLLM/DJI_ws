@@ -671,4 +671,5 @@ CMakeFiles/dji_driver_node.dir/src/dji_driver_node.cpp.o: \
  /opt/ros/humble/include/tf2/tf2/LinearMath/MinMax.hpp \
  /opt/ros/humble/include/tf2/tf2/visibility_control.h \
  /opt/ros/humble/include/tf2/tf2/LinearMath/QuadWord.hpp \
- /home/yinzi/DJI_ws/dji_driver/include/dji_driver/dji_protocol.hpp
+ /home/yinzi/DJI_ws/dji_driver/include/dji_driver/dji_protocol.hpp \
+ /home/yinzi/DJI_ws/dji_driver/include/dji_driver/CRC8_CRC16.h

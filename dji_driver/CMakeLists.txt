@@ -24,6 +24,7 @@ include_directories(
 add_executable(dji_driver_node 
   src/dji_driver_node.cpp
   src/dji_protocol.cpp
+  src/CRC8_CRC16.c
 )
 target_include_directories(dji_driver_node PUBLIC
   $<BUILD_INTERFACE:${CMAKE_CURRENT_SOURCE_DIR}/include>

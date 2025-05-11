@@ -1,0 +1,44 @@
+[01m[K/home/yinzi/DJI_ws/dji_driver/src/CRC8_CRC16.c:[m[K In function ‘[01m[Kget_CRC16_check_sum[m[K’:
+[01m[K/home/yinzi/DJI_ws/dji_driver/src/CRC8_CRC16.c:169:24:[m[K [01;31m[Kerror: [m[K‘[01m[KNULL[m[K’ undeclared (first use in this function)
+  169 |     if (pch_message == [01;31m[KNULL[m[K)
+      |                        [01;31m[K^~~~[m[K
+[01m[K/home/yinzi/DJI_ws/dji_driver/src/CRC8_CRC16.c:19:1:[m[K [01;36m[Knote: [m[K‘[01m[KNULL[m[K’ is defined in header ‘[01m[K<stddef.h>[m[K’; did you forget to ‘[01m[K#include <stddef.h>[m[K’?
+   18 | #include "dji_driver/CRC8_CRC16.h"
+  +++ |+[32m[K#include <stddef.h>[m[K
+   19 | //crc8 generator polynomial:G(x)=x8+x5+x4+1
+[01m[K/home/yinzi/DJI_ws/dji_driver/src/CRC8_CRC16.c:169:24:[m[K [01;36m[Knote: [m[Keach undeclared identifier is reported only once for each function it appears in
+  169 |     if (pch_message == [01;36m[KNULL[m[K)
+      |                        [01;36m[K^~~~[m[K
+[01m[K/home/yinzi/DJI_ws/dji_driver/src/CRC8_CRC16.c:[m[K In function ‘[01m[Kverify_CRC16_check_sum[m[K’:
+[01m[K/home/yinzi/DJI_ws/dji_driver/src/CRC8_CRC16.c:197:24:[m[K [01;31m[Kerror: [m[K‘[01m[KNULL[m[K’ undeclared (first use in this function)
+  197 |     if ((pchMessage == [01;31m[KNULL[m[K) || (dwLength <= 2))
+      |                        [01;31m[K^~~~[m[K
+[01m[K/home/yinzi/DJI_ws/dji_driver/src/CRC8_CRC16.c:197:24:[m[K [01;36m[Knote: [m[K‘[01m[KNULL[m[K’ is defined in header ‘[01m[K<stddef.h>[m[K’; did you forget to ‘[01m[K#include <stddef.h>[m[K’?
+[01m[K/home/yinzi/DJI_ws/dji_driver/src/CRC8_CRC16.c:[m[K In function ‘[01m[Kappend_CRC16_check_sum[m[K’:
+[01m[K/home/yinzi/DJI_ws/dji_driver/src/CRC8_CRC16.c:221:24:[m[K [01;31m[Kerror: [m[K‘[01m[KNULL[m[K’ undeclared (first use in this function)
+  221 |     if ((pchMessage == [01;31m[KNULL[m[K) || (dwLength <= 2))
+      |                        [01;31m[K^~~~[m[K
+[01m[K/home/yinzi/DJI_ws/dji_driver/src/CRC8_CRC16.c:221:24:[m[K [01;36m[Knote: [m[K‘[01m[KNULL[m[K’ is defined in header ‘[01m[K<stddef.h>[m[K’; did you forget to ‘[01m[K#include <stddef.h>[m[K’?
+[01m[K/home/yinzi/DJI_ws/dji_driver/src/dji_protocol.cpp:[m[K In function ‘[01m[Kvoid dji_driver::fill_checksums(dji_driver::ControlCommand&)[m[K’:
+[01m[K/home/yinzi/DJI_ws/dji_driver/src/dji_protocol.cpp:19:78:[m[K [01;31m[Kerror: [m[K‘[01m[KCRC8_INIT[m[K’ was not declared in this scope
+   19 |     cmd.crc8 = get_CRC8_check_sum(reinterpret_cast<unsigned char*>(&cmd), 4, [01;31m[KCRC8_INIT[m[K);
+      |                                                                              [01;31m[K^~~~~~~~~[m[K
+[01m[K/home/yinzi/DJI_ws/dji_driver/src/dji_protocol.cpp:23:62:[m[K [01;31m[Kerror: [m[K‘[01m[KCRC16_INIT[m[K’ was not declared in this scope
+   23 |                                  sizeof(ControlCommand) - 2, [01;31m[KCRC16_INIT[m[K);
+      |                                                              [01;31m[K^~~~~~~~~~[m[K
+gmake[2]: *** [CMakeFiles/dji_driver_node.dir/build.make:90：CMakeFiles/dji_driver_node.dir/src/dji_protocol.cpp.o] 错误 1
+gmake[2]: *** 正在等待未完成的任务....
+gmake[2]: *** [CMakeFiles/dji_driver_node.dir/build.make:104：CMakeFiles/dji_driver_node.dir/src/CRC8_CRC16.c.o] 错误 1
+In file included from [01m[K/home/yinzi/DJI_ws/dji_driver/src/dji_driver_node.cpp:1[m[K:
+[01m[K/home/yinzi/DJI_ws/dji_driver/include/dji_driver/dji_driver_node.hpp:[m[K In constructor ‘[01m[Kdji_driver::DJIDriverNode::DJIDriverNode()[m[K’:
+[01m[K/home/yinzi/DJI_ws/dji_driver/include/dji_driver/dji_driver_node.hpp:178:10:[m[K [01;35m[Kwarning: [m[K‘[01m[Kdji_driver::DJIDriverNode::encoder_connected_[m[K’ will be initialized after [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wreorder-Wreorder]8;;[m[K]
+  178 |     bool [01;35m[Kencoder_connected_[m[K;            ///< 编码器串口连接状态标志
+      |          [01;35m[K^~~~~~~~~~~~~~~~~~[m[K
+[01m[K/home/yinzi/DJI_ws/dji_driver/include/dji_driver/dji_driver_node.hpp:164:18:[m[K [01;35m[Kwarning: [m[K  ‘[01m[Krclcpp::Time dji_driver::DJIDriverNode::last_tx_print_time_[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wreorder-Wreorder]8;;[m[K]
+  164 |     rclcpp::Time [01;35m[Klast_tx_print_time_[m[K;   ///< 上次发送数据打印时间
+      |                  [01;35m[K^~~~~~~~~~~~~~~~~~~[m[K
+[01m[K/home/yinzi/DJI_ws/dji_driver/src/dji_driver_node.cpp:18:1:[m[K [01;35m[Kwarning: [m[K  when initialized here [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wreorder-Wreorder]8;;[m[K]
+   18 | [01;35m[KDJIDriverNode[m[K::DJIDriverNode()
+      | [01;35m[K^~~~~~~~~~~~~[m[K
+gmake[1]: *** [CMakeFiles/Makefile2:137：CMakeFiles/dji_driver_node.dir/all] 错误 2
+gmake: *** [Makefile:146：all] 错误 2

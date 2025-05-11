@@ -2,6 +2,7 @@
 #define DJI_PROTOCOL_HPP_
 
 #include <cstdint>
+#include "CRC8_CRC16.h"  // Include the original CRC header
 
 namespace dji_driver
 {
@@ -54,33 +55,7 @@ struct EncoderData {
 
 #pragma pack()
 
-// CRC8表及初始值
-extern const uint8_t CRC8_INIT;
-extern const uint8_t CRC8_TABLE[256];
-
-// CRC16表及初始值
-extern uint16_t CRC16_INIT;
-extern const uint16_t CRC16_TABLE[256];
-
-/**
- * @brief 计算CRC8校验和
- * 
- * @param data 需要计算校验和的数据缓冲区指针
- * @param length 数据长度
- * @param init_crc 初始CRC8值
- * @return uint8_t 计算得到的校验和
- */
-uint8_t calculate_crc8(const uint8_t* data, uint32_t length, uint8_t init_crc);
-
-/**
- * @brief 计算CRC16校验和
- * 
- * @param data 需要计算校验和的数据缓冲区指针
- * @param length 数据长度
- * @param init_crc 初始CRC16值
- * @return uint16_t 计算得到的校验和
- */
-uint16_t calculate_crc16(const uint8_t* data, uint32_t length, uint16_t init_crc);
+// 使用原始CRC8_CRC16.h和.c中的变量和函数，无需重新声明或实现
 
 /**
  * @brief 填充控制命令的校验和

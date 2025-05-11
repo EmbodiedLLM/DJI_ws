@@ -1,0 +1,4 @@
+[35m[1mConsolidate compiler generated dependencies of target dji_driver_node[0m
+[ 50%] [32mBuilding C object CMakeFiles/dji_driver_node.dir/src/CRC8_CRC16.c.o[0m
+[ 50%] [32mBuilding CXX object CMakeFiles/dji_driver_node.dir/src/dji_protocol.cpp.o[0m
+[ 75%] [32m[1mLinking CXX executable dji_driver_node[0m
