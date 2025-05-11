@@ -9,6 +9,7 @@ set(CMAKE_DEPENDS_LANGUAGES
 # The set of dependency files which are needed:
 set(CMAKE_DEPENDS_DEPENDENCY_FILES
   "/home/yinzi/DJI_ws/dji_driver/src/dji_driver_node.cpp" "CMakeFiles/dji_driver_node.dir/src/dji_driver_node.cpp.o" "gcc" "CMakeFiles/dji_driver_node.dir/src/dji_driver_node.cpp.o.d"
+  "/home/yinzi/DJI_ws/dji_driver/src/dji_protocol.cpp" "CMakeFiles/dji_driver_node.dir/src/dji_protocol.cpp.o" "gcc" "CMakeFiles/dji_driver_node.dir/src/dji_protocol.cpp.o.d"
   )
 
 # Targets to which this target links.

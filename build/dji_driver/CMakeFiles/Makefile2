@@ -135,12 +135,12 @@ CMakeFiles/dji_driver_uninstall.dir/clean:
 CMakeFiles/dji_driver_node.dir/all:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/dji_driver_node.dir/build.make CMakeFiles/dji_driver_node.dir/depend
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/dji_driver_node.dir/build.make CMakeFiles/dji_driver_node.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/yinzi/DJI_ws/build/dji_driver/CMakeFiles --progress-num=1,2 "Built target dji_driver_node"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/yinzi/DJI_ws/build/dji_driver/CMakeFiles --progress-num=1,2,3 "Built target dji_driver_node"
 .PHONY : CMakeFiles/dji_driver_node.dir/all
 
 # Build rule for subdir invocation for target.
 CMakeFiles/dji_driver_node.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/yinzi/DJI_ws/build/dji_driver/CMakeFiles 2
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/yinzi/DJI_ws/build/dji_driver/CMakeFiles 3
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 CMakeFiles/dji_driver_node.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/yinzi/DJI_ws/build/dji_driver/CMakeFiles 0
 .PHONY : CMakeFiles/dji_driver_node.dir/rule

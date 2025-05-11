@@ -83,39 +83,47 @@ CMakeFiles/dji_driver_node.dir/src/dji_driver_node.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/dji_driver_node.dir/src/dji_driver_node.cpp.s"
 	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/yinzi/DJI_ws/dji_driver/src/dji_driver_node.cpp -o CMakeFiles/dji_driver_node.dir/src/dji_driver_node.cpp.s
 
+CMakeFiles/dji_driver_node.dir/src/dji_protocol.cpp.o: CMakeFiles/dji_driver_node.dir/flags.make
+CMakeFiles/dji_driver_node.dir/src/dji_protocol.cpp.o: /home/yinzi/DJI_ws/dji_driver/src/dji_protocol.cpp
+CMakeFiles/dji_driver_node.dir/src/dji_protocol.cpp.o: CMakeFiles/dji_driver_node.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/yinzi/DJI_ws/build/dji_driver/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object CMakeFiles/dji_driver_node.dir/src/dji_protocol.cpp.o"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/dji_driver_node.dir/src/dji_protocol.cpp.o -MF CMakeFiles/dji_driver_node.dir/src/dji_protocol.cpp.o.d -o CMakeFiles/dji_driver_node.dir/src/dji_protocol.cpp.o -c /home/yinzi/DJI_ws/dji_driver/src/dji_protocol.cpp
+
+CMakeFiles/dji_driver_node.dir/src/dji_protocol.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/dji_driver_node.dir/src/dji_protocol.cpp.i"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/yinzi/DJI_ws/dji_driver/src/dji_protocol.cpp > CMakeFiles/dji_driver_node.dir/src/dji_protocol.cpp.i
+
+CMakeFiles/dji_driver_node.dir/src/dji_protocol.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/dji_driver_node.dir/src/dji_protocol.cpp.s"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/yinzi/DJI_ws/dji_driver/src/dji_protocol.cpp -o CMakeFiles/dji_driver_node.dir/src/dji_protocol.cpp.s
+
 # Object files for target dji_driver_node
 dji_driver_node_OBJECTS = \
-"CMakeFiles/dji_driver_node.dir/src/dji_driver_node.cpp.o"
+"CMakeFiles/dji_driver_node.dir/src/dji_driver_node.cpp.o" \
+"CMakeFiles/dji_driver_node.dir/src/dji_protocol.cpp.o"
 
 # External object files for target dji_driver_node
 dji_driver_node_EXTERNAL_OBJECTS =
 
 dji_driver_node: CMakeFiles/dji_driver_node.dir/src/dji_driver_node.cpp.o
+dji_driver_node: CMakeFiles/dji_driver_node.dir/src/dji_protocol.cpp.o
 dji_driver_node: CMakeFiles/dji_driver_node.dir/build.make
-dji_driver_node: /opt/ros/humble/lib/librclcpp.so
 dji_driver_node: /opt/ros/humble/lib/libnav_msgs__rosidl_typesupport_fastrtps_c.so
 dji_driver_node: /opt/ros/humble/lib/libnav_msgs__rosidl_typesupport_fastrtps_cpp.so
 dji_driver_node: /opt/ros/humble/lib/libnav_msgs__rosidl_typesupport_introspection_c.so
 dji_driver_node: /opt/ros/humble/lib/libnav_msgs__rosidl_typesupport_introspection_cpp.so
 dji_driver_node: /opt/ros/humble/lib/libnav_msgs__rosidl_typesupport_cpp.so
 dji_driver_node: /opt/ros/humble/lib/libnav_msgs__rosidl_generator_py.so
+dji_driver_node: /opt/ros/humble/lib/libstatic_transform_broadcaster_node.so
 dji_driver_node: /usr/local/lib/libserial.so
+dji_driver_node: /opt/ros/humble/lib/libnav_msgs__rosidl_typesupport_c.so
+dji_driver_node: /opt/ros/humble/lib/libnav_msgs__rosidl_generator_c.so
+dji_driver_node: /opt/ros/humble/lib/libtf2_ros.so
+dji_driver_node: /opt/ros/humble/lib/libtf2.so
+dji_driver_node: /opt/ros/humble/lib/libmessage_filters.so
+dji_driver_node: /opt/ros/humble/lib/librclcpp_action.so
+dji_driver_node: /opt/ros/humble/lib/librclcpp.so
 dji_driver_node: /opt/ros/humble/lib/liblibstatistics_collector.so
-dji_driver_node: /opt/ros/humble/lib/librcl.so
-dji_driver_node: /opt/ros/humble/lib/librmw_implementation.so
-dji_driver_node: /opt/ros/humble/lib/libament_index_cpp.so
-dji_driver_node: /opt/ros/humble/lib/librcl_logging_spdlog.so
-dji_driver_node: /opt/ros/humble/lib/librcl_logging_interface.so
-dji_driver_node: /opt/ros/humble/lib/librcl_interfaces__rosidl_typesupport_fastrtps_c.so
-dji_driver_node: /opt/ros/humble/lib/librcl_interfaces__rosidl_typesupport_introspection_c.so
-dji_driver_node: /opt/ros/humble/lib/librcl_interfaces__rosidl_typesupport_fastrtps_cpp.so
-dji_driver_node: /opt/ros/humble/lib/librcl_interfaces__rosidl_typesupport_introspection_cpp.so
-dji_driver_node: /opt/ros/humble/lib/librcl_interfaces__rosidl_typesupport_cpp.so
-dji_driver_node: /opt/ros/humble/lib/librcl_interfaces__rosidl_generator_py.so
-dji_driver_node: /opt/ros/humble/lib/librcl_interfaces__rosidl_typesupport_c.so
-dji_driver_node: /opt/ros/humble/lib/librcl_interfaces__rosidl_generator_c.so
-dji_driver_node: /opt/ros/humble/lib/librcl_yaml_param_parser.so
-dji_driver_node: /opt/ros/humble/lib/libyaml.so
 dji_driver_node: /opt/ros/humble/lib/librosgraph_msgs__rosidl_typesupport_fastrtps_c.so
 dji_driver_node: /opt/ros/humble/lib/librosgraph_msgs__rosidl_typesupport_fastrtps_cpp.so
 dji_driver_node: /opt/ros/humble/lib/librosgraph_msgs__rosidl_typesupport_introspection_c.so
@@ -132,47 +140,86 @@ dji_driver_node: /opt/ros/humble/lib/libstatistics_msgs__rosidl_typesupport_cpp.
 dji_driver_node: /opt/ros/humble/lib/libstatistics_msgs__rosidl_generator_py.so
 dji_driver_node: /opt/ros/humble/lib/libstatistics_msgs__rosidl_typesupport_c.so
 dji_driver_node: /opt/ros/humble/lib/libstatistics_msgs__rosidl_generator_c.so
+dji_driver_node: /opt/ros/humble/lib/librcl_action.so
+dji_driver_node: /opt/ros/humble/lib/librcl.so
+dji_driver_node: /opt/ros/humble/lib/librcl_interfaces__rosidl_typesupport_fastrtps_c.so
+dji_driver_node: /opt/ros/humble/lib/librcl_interfaces__rosidl_typesupport_introspection_c.so
+dji_driver_node: /opt/ros/humble/lib/librcl_interfaces__rosidl_typesupport_fastrtps_cpp.so
+dji_driver_node: /opt/ros/humble/lib/librcl_interfaces__rosidl_typesupport_introspection_cpp.so
+dji_driver_node: /opt/ros/humble/lib/librcl_interfaces__rosidl_typesupport_cpp.so
+dji_driver_node: /opt/ros/humble/lib/librcl_interfaces__rosidl_generator_py.so
+dji_driver_node: /opt/ros/humble/lib/librcl_interfaces__rosidl_typesupport_c.so
+dji_driver_node: /opt/ros/humble/lib/librcl_interfaces__rosidl_generator_c.so
+dji_driver_node: /opt/ros/humble/lib/librcl_yaml_param_parser.so
+dji_driver_node: /opt/ros/humble/lib/libyaml.so
 dji_driver_node: /opt/ros/humble/lib/libtracetools.so
+dji_driver_node: /opt/ros/humble/lib/librmw_implementation.so
+dji_driver_node: /opt/ros/humble/lib/libament_index_cpp.so
+dji_driver_node: /opt/ros/humble/lib/librcl_logging_spdlog.so
+dji_driver_node: /opt/ros/humble/lib/librcl_logging_interface.so
+dji_driver_node: /opt/ros/humble/lib/libtf2_msgs__rosidl_typesupport_fastrtps_c.so
 dji_driver_node: /opt/ros/humble/lib/libgeometry_msgs__rosidl_typesupport_fastrtps_c.so
 dji_driver_node: /opt/ros/humble/lib/libstd_msgs__rosidl_typesupport_fastrtps_c.so
+dji_driver_node: /opt/ros/humble/lib/libaction_msgs__rosidl_typesupport_fastrtps_c.so
 dji_driver_node: /opt/ros/humble/lib/libbuiltin_interfaces__rosidl_typesupport_fastrtps_c.so
+dji_driver_node: /opt/ros/humble/lib/libunique_identifier_msgs__rosidl_typesupport_fastrtps_c.so
 dji_driver_node: /opt/ros/humble/lib/librosidl_typesupport_fastrtps_c.so
+dji_driver_node: /opt/ros/humble/lib/libtf2_msgs__rosidl_typesupport_introspection_c.so
+dji_driver_node: /opt/ros/humble/lib/libgeometry_msgs__rosidl_typesupport_introspection_c.so
+dji_driver_node: /opt/ros/humble/lib/libstd_msgs__rosidl_typesupport_introspection_c.so
+dji_driver_node: /opt/ros/humble/lib/libaction_msgs__rosidl_typesupport_introspection_c.so
+dji_driver_node: /opt/ros/humble/lib/libbuiltin_interfaces__rosidl_typesupport_introspection_c.so
+dji_driver_node: /opt/ros/humble/lib/libunique_identifier_msgs__rosidl_typesupport_introspection_c.so
+dji_driver_node: /opt/ros/humble/lib/libtf2_msgs__rosidl_typesupport_fastrtps_cpp.so
 dji_driver_node: /opt/ros/humble/lib/libgeometry_msgs__rosidl_typesupport_fastrtps_cpp.so
 dji_driver_node: /opt/ros/humble/lib/libstd_msgs__rosidl_typesupport_fastrtps_cpp.so
+dji_driver_node: /opt/ros/humble/lib/libaction_msgs__rosidl_typesupport_fastrtps_cpp.so
 dji_driver_node: /opt/ros/humble/lib/libbuiltin_interfaces__rosidl_typesupport_fastrtps_cpp.so
+dji_driver_node: /opt/ros/humble/lib/libunique_identifier_msgs__rosidl_typesupport_fastrtps_cpp.so
 dji_driver_node: /opt/ros/humble/lib/librosidl_typesupport_fastrtps_cpp.so
 dji_driver_node: /opt/ros/humble/lib/libfastcdr.so.1.0.24
 dji_driver_node: /opt/ros/humble/lib/librmw.so
-dji_driver_node: /opt/ros/humble/lib/libgeometry_msgs__rosidl_typesupport_introspection_c.so
-dji_driver_node: /opt/ros/humble/lib/libstd_msgs__rosidl_typesupport_introspection_c.so
-dji_driver_node: /opt/ros/humble/lib/libbuiltin_interfaces__rosidl_typesupport_introspection_c.so
+dji_driver_node: /opt/ros/humble/lib/libtf2_msgs__rosidl_typesupport_introspection_cpp.so
 dji_driver_node: /opt/ros/humble/lib/libgeometry_msgs__rosidl_typesupport_introspection_cpp.so
 dji_driver_node: /opt/ros/humble/lib/libstd_msgs__rosidl_typesupport_introspection_cpp.so
+dji_driver_node: /opt/ros/humble/lib/libaction_msgs__rosidl_typesupport_introspection_cpp.so
 dji_driver_node: /opt/ros/humble/lib/libbuiltin_interfaces__rosidl_typesupport_introspection_cpp.so
+dji_driver_node: /opt/ros/humble/lib/libunique_identifier_msgs__rosidl_typesupport_introspection_cpp.so
 dji_driver_node: /opt/ros/humble/lib/librosidl_typesupport_introspection_cpp.so
 dji_driver_node: /opt/ros/humble/lib/librosidl_typesupport_introspection_c.so
+dji_driver_node: /opt/ros/humble/lib/libtf2_msgs__rosidl_typesupport_cpp.so
 dji_driver_node: /opt/ros/humble/lib/libgeometry_msgs__rosidl_typesupport_cpp.so
 dji_driver_node: /opt/ros/humble/lib/libstd_msgs__rosidl_typesupport_cpp.so
+dji_driver_node: /opt/ros/humble/lib/libaction_msgs__rosidl_typesupport_cpp.so
 dji_driver_node: /opt/ros/humble/lib/libbuiltin_interfaces__rosidl_typesupport_cpp.so
+dji_driver_node: /opt/ros/humble/lib/libunique_identifier_msgs__rosidl_typesupport_cpp.so
 dji_driver_node: /opt/ros/humble/lib/librosidl_typesupport_cpp.so
+dji_driver_node: /opt/ros/humble/lib/libtf2_msgs__rosidl_generator_py.so
 dji_driver_node: /opt/ros/humble/lib/libgeometry_msgs__rosidl_generator_py.so
-dji_driver_node: /opt/ros/humble/lib/libnav_msgs__rosidl_typesupport_c.so
-dji_driver_node: /opt/ros/humble/lib/libgeometry_msgs__rosidl_typesupport_c.so
-dji_driver_node: /opt/ros/humble/lib/libnav_msgs__rosidl_generator_c.so
-dji_driver_node: /opt/ros/humble/lib/libgeometry_msgs__rosidl_generator_c.so
 dji_driver_node: /opt/ros/humble/lib/libstd_msgs__rosidl_generator_py.so
-dji_driver_node: /opt/ros/humble/lib/libbuiltin_interfaces__rosidl_generator_py.so
+dji_driver_node: /opt/ros/humble/lib/libtf2_msgs__rosidl_typesupport_c.so
+dji_driver_node: /opt/ros/humble/lib/libgeometry_msgs__rosidl_typesupport_c.so
 dji_driver_node: /opt/ros/humble/lib/libstd_msgs__rosidl_typesupport_c.so
-dji_driver_node: /opt/ros/humble/lib/libbuiltin_interfaces__rosidl_typesupport_c.so
+dji_driver_node: /opt/ros/humble/lib/libtf2_msgs__rosidl_generator_c.so
+dji_driver_node: /opt/ros/humble/lib/libgeometry_msgs__rosidl_generator_c.so
 dji_driver_node: /opt/ros/humble/lib/libstd_msgs__rosidl_generator_c.so
+dji_driver_node: /opt/ros/humble/lib/libaction_msgs__rosidl_generator_py.so
+dji_driver_node: /opt/ros/humble/lib/libbuiltin_interfaces__rosidl_generator_py.so
+dji_driver_node: /opt/ros/humble/lib/libaction_msgs__rosidl_typesupport_c.so
+dji_driver_node: /opt/ros/humble/lib/libbuiltin_interfaces__rosidl_typesupport_c.so
+dji_driver_node: /opt/ros/humble/lib/libaction_msgs__rosidl_generator_c.so
 dji_driver_node: /opt/ros/humble/lib/libbuiltin_interfaces__rosidl_generator_c.so
+dji_driver_node: /opt/ros/humble/lib/libunique_identifier_msgs__rosidl_generator_py.so
+dji_driver_node: /usr/lib/x86_64-linux-gnu/libpython3.10.so
+dji_driver_node: /opt/ros/humble/lib/libunique_identifier_msgs__rosidl_typesupport_c.so
 dji_driver_node: /opt/ros/humble/lib/librosidl_typesupport_c.so
 dji_driver_node: /opt/ros/humble/lib/librcpputils.so
+dji_driver_node: /opt/ros/humble/lib/libunique_identifier_msgs__rosidl_generator_c.so
 dji_driver_node: /opt/ros/humble/lib/librosidl_runtime_c.so
 dji_driver_node: /opt/ros/humble/lib/librcutils.so
-dji_driver_node: /usr/lib/x86_64-linux-gnu/libpython3.10.so
+dji_driver_node: /usr/lib/x86_64-linux-gnu/liborocos-kdl.so
 dji_driver_node: CMakeFiles/dji_driver_node.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/yinzi/DJI_ws/build/dji_driver/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Linking CXX executable dji_driver_node"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/yinzi/DJI_ws/build/dji_driver/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Linking CXX executable dji_driver_node"
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/dji_driver_node.dir/link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.

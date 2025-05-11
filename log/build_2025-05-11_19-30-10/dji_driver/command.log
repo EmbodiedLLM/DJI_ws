@@ -1,0 +1,2 @@
+Invoking command in '/home/yinzi/DJI_ws/build/dji_driver': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --build /home/yinzi/DJI_ws/build/dji_driver -- -j20 -l20
+Invoked command in '/home/yinzi/DJI_ws/build/dji_driver' returned '2': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --build /home/yinzi/DJI_ws/build/dji_driver -- -j20 -l20

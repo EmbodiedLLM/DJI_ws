@@ -234,6 +234,30 @@ src/dji_driver_node.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/dji_driver_node.dir/build.make CMakeFiles/dji_driver_node.dir/src/dji_driver_node.cpp.s
 .PHONY : src/dji_driver_node.cpp.s
 
+src/dji_protocol.o: src/dji_protocol.cpp.o
+.PHONY : src/dji_protocol.o
+
+# target to build an object file
+src/dji_protocol.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/dji_driver_node.dir/build.make CMakeFiles/dji_driver_node.dir/src/dji_protocol.cpp.o
+.PHONY : src/dji_protocol.cpp.o
+
+src/dji_protocol.i: src/dji_protocol.cpp.i
+.PHONY : src/dji_protocol.i
+
+# target to preprocess a source file
+src/dji_protocol.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/dji_driver_node.dir/build.make CMakeFiles/dji_driver_node.dir/src/dji_protocol.cpp.i
+.PHONY : src/dji_protocol.cpp.i
+
+src/dji_protocol.s: src/dji_protocol.cpp.s
+.PHONY : src/dji_protocol.s
+
+# target to generate assembly for a file
+src/dji_protocol.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/dji_driver_node.dir/build.make CMakeFiles/dji_driver_node.dir/src/dji_protocol.cpp.s
+.PHONY : src/dji_protocol.cpp.s
+
 # Help Target
 help:
 	@echo "The following are some of the valid targets for this Makefile:"
@@ -253,6 +277,9 @@ help:
 	@echo "... src/dji_driver_node.o"
 	@echo "... src/dji_driver_node.i"
 	@echo "... src/dji_driver_node.s"
+	@echo "... src/dji_protocol.o"
+	@echo "... src/dji_protocol.i"
+	@echo "... src/dji_protocol.s"
 .PHONY : help
 
 

@@ -713,8 +713,98 @@ CMakeFiles/dji_driver_node.dir/src/dji_driver_node.cpp.o: /home/yinzi/DJI_ws/dji
   /opt/ros/humble/include/geometry_msgs/geometry_msgs/msg/detail/twist_with_covariance__traits.hpp \
   /opt/ros/humble/include/nav_msgs/nav_msgs/msg/detail/odometry__type_support.hpp \
   /opt/ros/humble/include/nav_msgs/nav_msgs/msg/rosidl_generator_cpp__visibility_control.hpp \
+  /opt/ros/humble/include/tf2_ros/tf2_ros/transform_broadcaster.h \
+  /opt/ros/humble/include/tf2_ros/tf2_ros/visibility_control.h \
+  /opt/ros/humble/include/geometry_msgs/geometry_msgs/msg/transform_stamped.hpp \
+  /opt/ros/humble/include/geometry_msgs/geometry_msgs/msg/detail/transform_stamped__struct.hpp \
+  /opt/ros/humble/include/geometry_msgs/geometry_msgs/msg/detail/transform__struct.hpp \
+  /opt/ros/humble/include/geometry_msgs/geometry_msgs/msg/detail/transform_stamped__builder.hpp \
+  /opt/ros/humble/include/geometry_msgs/geometry_msgs/msg/detail/transform_stamped__traits.hpp \
+  /opt/ros/humble/include/geometry_msgs/geometry_msgs/msg/detail/transform__traits.hpp \
+  /opt/ros/humble/include/geometry_msgs/geometry_msgs/msg/detail/transform_stamped__type_support.hpp \
+  /opt/ros/humble/include/tf2_msgs/tf2_msgs/msg/tf_message.hpp \
+  /opt/ros/humble/include/tf2_msgs/tf2_msgs/msg/detail/tf_message__struct.hpp \
+  /opt/ros/humble/include/tf2_msgs/tf2_msgs/msg/detail/tf_message__builder.hpp \
+  /opt/ros/humble/include/tf2_msgs/tf2_msgs/msg/detail/tf_message__traits.hpp \
+  /opt/ros/humble/include/tf2_msgs/tf2_msgs/msg/detail/tf_message__type_support.hpp \
+  /opt/ros/humble/include/tf2_msgs/tf2_msgs/msg/rosidl_generator_cpp__visibility_control.hpp \
+  /opt/ros/humble/include/tf2_ros/tf2_ros/qos.hpp \
+  /opt/ros/humble/include/tf2/tf2/LinearMath/Quaternion.h \
+  /opt/ros/humble/include/tf2/tf2/LinearMath/Quaternion.hpp \
+  /opt/ros/humble/include/tf2/tf2/LinearMath/Vector3.hpp \
+  /opt/ros/humble/include/tf2/tf2/LinearMath/Scalar.hpp \
+  /usr/include/c++/11/math.h \
+  /usr/include/c++/11/cfloat \
+  /usr/lib/gcc/x86_64-linux-gnu/11/include/float.h \
+  /opt/ros/humble/include/tf2/tf2/LinearMath/MinMax.hpp \
+  /opt/ros/humble/include/tf2/tf2/visibility_control.h \
+  /opt/ros/humble/include/tf2/tf2/LinearMath/QuadWord.hpp \
   /home/yinzi/DJI_ws/dji_driver/include/dji_driver/dji_protocol.hpp
 
+CMakeFiles/dji_driver_node.dir/src/dji_protocol.cpp.o: /home/yinzi/DJI_ws/dji_driver/src/dji_protocol.cpp \
+  /usr/include/stdc-predef.h \
+  /home/yinzi/DJI_ws/dji_driver/include/dji_driver/dji_protocol.hpp \
+  /usr/include/c++/11/cstdint \
+  /usr/include/x86_64-linux-gnu/c++/11/bits/c++config.h \
+  /usr/include/x86_64-linux-gnu/c++/11/bits/os_defines.h \
+  /usr/include/features.h \
+  /usr/include/features-time64.h \
+  /usr/include/x86_64-linux-gnu/bits/wordsize.h \
+  /usr/include/x86_64-linux-gnu/bits/timesize.h \
+  /usr/include/x86_64-linux-gnu/sys/cdefs.h \
+  /usr/include/x86_64-linux-gnu/bits/long-double.h \
+  /usr/include/x86_64-linux-gnu/gnu/stubs.h \
+  /usr/include/x86_64-linux-gnu/gnu/stubs-64.h \
+  /usr/include/x86_64-linux-gnu/c++/11/bits/cpu_defines.h \
+  /usr/include/c++/11/pstl/pstl_config.h \
+  /usr/lib/gcc/x86_64-linux-gnu/11/include/stdint.h \
+  /usr/include/stdint.h \
+  /usr/include/x86_64-linux-gnu/bits/libc-header-start.h \
+  /usr/include/x86_64-linux-gnu/bits/types.h \
+  /usr/include/x86_64-linux-gnu/bits/typesizes.h \
+  /usr/include/x86_64-linux-gnu/bits/time64.h \
+  /usr/include/x86_64-linux-gnu/bits/wchar.h \
+  /usr/include/x86_64-linux-gnu/bits/stdint-intn.h \
+  /usr/include/x86_64-linux-gnu/bits/stdint-uintn.h \
+  /usr/include/c++/11/cstddef \
+  /usr/lib/gcc/x86_64-linux-gnu/11/include/stddef.h
+
+
+/usr/include/c++/11/cstddef:
+
+/opt/ros/humble/include/tf2/tf2/LinearMath/QuadWord.hpp:
+
+/opt/ros/humble/include/tf2/tf2/LinearMath/MinMax.hpp:
+
+/usr/lib/gcc/x86_64-linux-gnu/11/include/float.h:
+
+/usr/include/c++/11/cfloat:
+
+/opt/ros/humble/include/tf2/tf2/LinearMath/Scalar.hpp:
+
+/opt/ros/humble/include/tf2/tf2/LinearMath/Vector3.hpp:
+
+/opt/ros/humble/include/tf2/tf2/LinearMath/Quaternion.h:
+
+/opt/ros/humble/include/tf2_ros/tf2_ros/qos.hpp:
+
+/opt/ros/humble/include/tf2_msgs/tf2_msgs/msg/rosidl_generator_cpp__visibility_control.hpp:
+
+/opt/ros/humble/include/tf2_msgs/tf2_msgs/msg/detail/tf_message__type_support.hpp:
+
+/opt/ros/humble/include/tf2_msgs/tf2_msgs/msg/detail/tf_message__traits.hpp:
+
+/opt/ros/humble/include/tf2_msgs/tf2_msgs/msg/detail/tf_message__struct.hpp:
+
+/opt/ros/humble/include/tf2_msgs/tf2_msgs/msg/tf_message.hpp:
+
+/opt/ros/humble/include/geometry_msgs/geometry_msgs/msg/detail/transform_stamped__builder.hpp:
+
+/opt/ros/humble/include/geometry_msgs/geometry_msgs/msg/detail/transform__struct.hpp:
+
+/opt/ros/humble/include/geometry_msgs/geometry_msgs/msg/transform_stamped.hpp:
+
+/opt/ros/humble/include/tf2_ros/tf2_ros/visibility_control.h:
 
 /opt/ros/humble/include/nav_msgs/nav_msgs/msg/rosidl_generator_cpp__visibility_control.hpp:
 
@@ -779,6 +869,8 @@ CMakeFiles/dji_driver_node.dir/src/dji_driver_node.cpp.o: /home/yinzi/DJI_ws/dji
 /opt/ros/humble/include/rcl_interfaces/rcl_interfaces/srv/detail/get_parameters__type_support.hpp:
 
 /opt/ros/humble/include/rcl_interfaces/rcl_interfaces/srv/detail/get_parameters__traits.hpp:
+
+/opt/ros/humble/include/tf2_ros/tf2_ros/transform_broadcaster.h:
 
 /opt/ros/humble/include/rcl_interfaces/rcl_interfaces/srv/detail/get_parameters__builder.hpp:
 
@@ -927,6 +1019,8 @@ CMakeFiles/dji_driver_node.dir/src/dji_driver_node.cpp.o: /home/yinzi/DJI_ws/dji
 /opt/ros/humble/include/rclcpp/rclcpp/node_interfaces/get_node_topics_interface.hpp:
 
 /opt/ros/humble/include/statistics_msgs/statistics_msgs/msg/detail/metrics_message__builder.hpp:
+
+/opt/ros/humble/include/geometry_msgs/geometry_msgs/msg/detail/transform_stamped__struct.hpp:
 
 /usr/include/c++/11/bits/stl_heap.h:
 
@@ -1192,6 +1286,8 @@ CMakeFiles/dji_driver_node.dir/src/dji_driver_node.cpp.o: /home/yinzi/DJI_ws/dji
 
 /usr/include/x86_64-linux-gnu/c++/11/bits/os_defines.h:
 
+/opt/ros/humble/include/tf2/tf2/LinearMath/Quaternion.hpp:
+
 /usr/include/c++/11/bits/exception_defines.h:
 
 /opt/ros/humble/include/rclcpp/rclcpp/event.hpp:
@@ -1305,6 +1401,8 @@ CMakeFiles/dji_driver_node.dir/src/dji_driver_node.cpp.o: /home/yinzi/DJI_ws/dji
 /opt/ros/humble/include/rclcpp/rclcpp/topic_statistics_state.hpp:
 
 /usr/include/stdc-predef.h:
+
+/opt/ros/humble/include/geometry_msgs/geometry_msgs/msg/detail/transform_stamped__type_support.hpp:
 
 /usr/include/x86_64-linux-gnu/bits/types/siginfo_t.h:
 
@@ -1698,11 +1796,15 @@ CMakeFiles/dji_driver_node.dir/src/dji_driver_node.cpp.o: /home/yinzi/DJI_ws/dji
 
 /opt/ros/humble/include/rcutils/rcutils/types/rcutils_ret.h:
 
+/usr/include/c++/11/math.h:
+
 /opt/ros/humble/include/libstatistics_collector/libstatistics_collector/visibility_control.hpp:
 
 /opt/ros/humble/include/rclcpp/rclcpp/network_flow_endpoint.hpp:
 
 /opt/ros/humble/include/rmw/rmw/init_options.h:
+
+/opt/ros/humble/include/tf2/tf2/visibility_control.h:
 
 /opt/ros/humble/include/rmw/rmw/domain_id.h:
 
@@ -1799,6 +1901,8 @@ CMakeFiles/dji_driver_node.dir/src/dji_driver_node.cpp.o: /home/yinzi/DJI_ws/dji
 /opt/ros/humble/include/rmw/rmw/events_statuses/message_lost.h:
 
 /opt/ros/humble/include/rmw/rmw/events_statuses/offered_deadline_missed.h:
+
+/opt/ros/humble/include/geometry_msgs/geometry_msgs/msg/detail/transform__traits.hpp:
 
 /opt/ros/humble/include/rclcpp/rclcpp/memory_strategies.hpp:
 
@@ -1928,6 +2032,8 @@ CMakeFiles/dji_driver_node.dir/src/dji_driver_node.cpp.o: /home/yinzi/DJI_ws/dji
 
 /opt/ros/humble/include/rclcpp/rclcpp/function_traits.hpp:
 
+/home/yinzi/DJI_ws/dji_driver/src/dji_protocol.cpp:
+
 /opt/ros/humble/include/rclcpp/rclcpp/type_support_decl.hpp:
 
 /opt/ros/humble/include/rcl/rcl/arguments.h:
@@ -1935,6 +2041,8 @@ CMakeFiles/dji_driver_node.dir/src/dji_driver_node.cpp.o: /home/yinzi/DJI_ws/dji
 /opt/ros/humble/include/rclcpp/rclcpp/logger.hpp:
 
 /opt/ros/humble/include/builtin_interfaces/builtin_interfaces/msg/detail/time__type_support.hpp:
+
+/opt/ros/humble/include/tf2_msgs/tf2_msgs/msg/detail/tf_message__builder.hpp:
 
 /opt/ros/humble/include/rclcpp/rclcpp/node_interfaces/get_node_base_interface.hpp:
 
@@ -2023,6 +2131,8 @@ CMakeFiles/dji_driver_node.dir/src/dji_driver_node.cpp.o: /home/yinzi/DJI_ws/dji
 /usr/include/x86_64-linux-gnu/bits/types/wint_t.h:
 
 /opt/ros/humble/include/rclcpp/rclcpp/waitable.hpp:
+
+/opt/ros/humble/include/geometry_msgs/geometry_msgs/msg/detail/transform_stamped__traits.hpp:
 
 /opt/ros/humble/include/rcl_interfaces/rcl_interfaces/msg/detail/set_parameters_result__type_support.hpp:
 

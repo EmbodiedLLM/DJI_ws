@@ -1,0 +1,72 @@
+[0.008s] Invoking command in '/home/yinzi/DJI_ws/build/dji_driver': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --build /home/yinzi/DJI_ws/build/dji_driver -- -j20 -l20
+[0.025s] -- Found ament_cmake: 1.3.11 (/opt/ros/humble/share/ament_cmake/cmake)
+[0.115s] -- Found rclcpp: 16.0.11 (/opt/ros/humble/share/rclcpp/cmake)
+[0.134s] -- Found rosidl_generator_c: 3.1.6 (/opt/ros/humble/share/rosidl_generator_c/cmake)
+[0.135s] -- Found rosidl_adapter: 3.1.6 (/opt/ros/humble/share/rosidl_adapter/cmake)
+[0.139s] -- Found rosidl_generator_cpp: 3.1.6 (/opt/ros/humble/share/rosidl_generator_cpp/cmake)
+[0.145s] -- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c
+[0.152s] -- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp
+[0.173s] -- Found rmw_implementation_cmake: 6.1.2 (/opt/ros/humble/share/rmw_implementation_cmake/cmake)
+[0.174s] -- Found rmw_fastrtps_cpp: 6.2.7 (/opt/ros/humble/share/rmw_fastrtps_cpp/cmake)
+[0.247s] -- Using RMW implementation 'rmw_fastrtps_cpp' as default
+[0.278s] -- Found geometry_msgs: 4.2.4 (/opt/ros/humble/share/geometry_msgs/cmake)
+[0.285s] -- Found serial: 1.2.1 (/usr/local/share/serial/cmake)
+[0.286s] -- Found nav_msgs: 4.2.4 (/opt/ros/humble/share/nav_msgs/cmake)
+[0.296s] -- Found tf2: 0.25.12 (/opt/ros/humble/share/tf2/cmake)
+[0.299s] -- Found tf2_ros: 0.25.12 (/opt/ros/humble/share/tf2_ros/cmake)
+[0.348s] -- Found tf2_geometry_msgs: 0.25.12 (/opt/ros/humble/share/tf2_geometry_msgs/cmake)
+[0.350s] -- Found eigen3_cmake_module: 0.1.1 (/opt/ros/humble/share/eigen3_cmake_module/cmake)
+[0.351s] -- Ensuring Eigen3 include directory is part of orocos-kdl CMake target
+[0.353s] -- Found ament_lint_auto: 0.12.11 (/opt/ros/humble/share/ament_lint_auto/cmake)
+[0.398s] -- Added test 'cppcheck' to perform static code analysis on C / C++ code
+[0.398s] -- Configured cppcheck include dirs: /home/yinzi/DJI_ws/dji_driver/include;$<BUILD_INTERFACE:/home/yinzi/DJI_ws/dji_driver/include>
+[0.398s] -- Configured cppcheck exclude dirs and/or files: 
+[0.398s] -- Added test 'flake8' to check Python code syntax and style conventions
+[0.398s] -- Added test 'lint_cmake' to check CMake code style
+[0.398s] -- Added test 'pep257' to check Python code against some of the docstring style conventions in PEP 257
+[0.399s] -- Added test 'uncrustify' to check C / C++ code style
+[0.399s] -- Configured uncrustify additional arguments: 
+[0.399s] -- Added test 'xmllint' to check XML markup files
+[0.399s] -- Configuring done
+[0.406s] -- Generating done
+[0.409s] -- Build files have been written to: /home/yinzi/DJI_ws/build/dji_driver
+[0.428s] [35m[1mConsolidate compiler generated dependencies of target dji_driver_node[0m
+[0.445s] [ 33%] [32mBuilding CXX object CMakeFiles/dji_driver_node.dir/src/dji_driver_node.cpp.o[0m
+[1.874s] In file included from [01m[K/home/yinzi/DJI_ws/dji_driver/src/dji_driver_node.cpp:1[m[K:
+[1.874s] [01m[K/home/yinzi/DJI_ws/dji_driver/include/dji_driver/dji_driver_node.hpp:[m[K In constructor ‘[01m[Kdji_driver::DJIDriverNode::DJIDriverNode()[m[K’:
+[1.874s] [01m[K/home/yinzi/DJI_ws/dji_driver/include/dji_driver/dji_driver_node.hpp:178:10:[m[K [01;35m[Kwarning: [m[K‘[01m[Kdji_driver::DJIDriverNode::encoder_connected_[m[K’ will be initialized after [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wreorder-Wreorder]8;;[m[K]
+[1.874s]   178 |     bool [01;35m[Kencoder_connected_[m[K;            ///< 编码器串口连接状态标志
+[1.875s]       |          [01;35m[K^~~~~~~~~~~~~~~~~~[m[K
+[1.875s] [01m[K/home/yinzi/DJI_ws/dji_driver/include/dji_driver/dji_driver_node.hpp:164:18:[m[K [01;35m[Kwarning: [m[K  ‘[01m[Krclcpp::Time dji_driver::DJIDriverNode::last_tx_print_time_[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wreorder-Wreorder]8;;[m[K]
+[1.875s]   164 |     rclcpp::Time [01;35m[Klast_tx_print_time_[m[K;   ///< 上次发送数据打印时间
+[1.875s]       |                  [01;35m[K^~~~~~~~~~~~~~~~~~~[m[K
+[1.875s] [01m[K/home/yinzi/DJI_ws/dji_driver/src/dji_driver_node.cpp:18:1:[m[K [01;35m[Kwarning: [m[K  when initialized here [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wreorder-Wreorder]8;;[m[K]
+[1.875s]    18 | [01;35m[KDJIDriverNode[m[K::DJIDriverNode()
+[1.875s]       | [01;35m[K^~~~~~~~~~~~~[m[K
+[5.843s] [ 66%] [32m[1mLinking CXX executable dji_driver_node[0m
+[6.140s] [100%] Built target dji_driver_node
+[6.151s] Invoked command in '/home/yinzi/DJI_ws/build/dji_driver' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --build /home/yinzi/DJI_ws/build/dji_driver -- -j20 -l20
+[6.163s] Invoking command in '/home/yinzi/DJI_ws/build/dji_driver': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --install /home/yinzi/DJI_ws/build/dji_driver
+[6.173s] -- Install configuration: ""
+[6.173s] -- Installing: /home/yinzi/DJI_ws/install/dji_driver/lib/dji_driver/dji_driver_node
+[6.178s] -- Set runtime path of "/home/yinzi/DJI_ws/install/dji_driver/lib/dji_driver/dji_driver_node" to ""
+[6.178s] -- Up-to-date: /home/yinzi/DJI_ws/install/dji_driver/share/dji_driver/config
+[6.178s] -- Installing: /home/yinzi/DJI_ws/install/dji_driver/share/dji_driver/config/dji_driver_params.yaml
+[6.178s] -- Up-to-date: /home/yinzi/DJI_ws/install/dji_driver/share/dji_driver/launch
+[6.178s] -- Installing: /home/yinzi/DJI_ws/install/dji_driver/share/dji_driver/launch/dji_driver.launch.py
+[6.178s] -- Up-to-date: /home/yinzi/DJI_ws/install/dji_driver/share/ament_index/resource_index/package_run_dependencies/dji_driver
+[6.178s] -- Up-to-date: /home/yinzi/DJI_ws/install/dji_driver/share/ament_index/resource_index/parent_prefix_path/dji_driver
+[6.178s] -- Up-to-date: /home/yinzi/DJI_ws/install/dji_driver/share/dji_driver/environment/ament_prefix_path.sh
+[6.178s] -- Installing: /home/yinzi/DJI_ws/install/dji_driver/share/dji_driver/environment/ament_prefix_path.dsv
+[6.178s] -- Up-to-date: /home/yinzi/DJI_ws/install/dji_driver/share/dji_driver/environment/path.sh
+[6.179s] -- Installing: /home/yinzi/DJI_ws/install/dji_driver/share/dji_driver/environment/path.dsv
+[6.179s] -- Up-to-date: /home/yinzi/DJI_ws/install/dji_driver/share/dji_driver/local_setup.bash
+[6.179s] -- Up-to-date: /home/yinzi/DJI_ws/install/dji_driver/share/dji_driver/local_setup.sh
+[6.179s] -- Up-to-date: /home/yinzi/DJI_ws/install/dji_driver/share/dji_driver/local_setup.zsh
+[6.179s] -- Installing: /home/yinzi/DJI_ws/install/dji_driver/share/dji_driver/local_setup.dsv
+[6.179s] -- Installing: /home/yinzi/DJI_ws/install/dji_driver/share/dji_driver/package.dsv
+[6.179s] -- Up-to-date: /home/yinzi/DJI_ws/install/dji_driver/share/ament_index/resource_index/packages/dji_driver
+[6.179s] -- Up-to-date: /home/yinzi/DJI_ws/install/dji_driver/share/dji_driver/cmake/dji_driverConfig.cmake
+[6.179s] -- Up-to-date: /home/yinzi/DJI_ws/install/dji_driver/share/dji_driver/cmake/dji_driverConfig-version.cmake
+[6.179s] -- Installing: /home/yinzi/DJI_ws/install/dji_driver/share/dji_driver/package.xml
+[6.181s] Invoked command in '/home/yinzi/DJI_ws/build/dji_driver' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --install /home/yinzi/DJI_ws/build/dji_driver

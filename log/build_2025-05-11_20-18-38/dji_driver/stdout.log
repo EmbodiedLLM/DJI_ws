@@ -1,0 +1,25 @@
+[ 33%] [32mBuilding CXX object CMakeFiles/dji_driver_node.dir/src/dji_driver_node.cpp.o[0m
+[ 66%] [32m[1mLinking CXX executable dji_driver_node[0m
+[100%] Built target dji_driver_node
+-- Install configuration: ""
+-- Installing: /home/yinzi/DJI_ws/install/dji_driver/lib/dji_driver/dji_driver_node
+-- Set runtime path of "/home/yinzi/DJI_ws/install/dji_driver/lib/dji_driver/dji_driver_node" to ""
+-- Up-to-date: /home/yinzi/DJI_ws/install/dji_driver/share/dji_driver/config
+-- Up-to-date: /home/yinzi/DJI_ws/install/dji_driver/share/dji_driver/config/dji_driver_params.yaml
+-- Up-to-date: /home/yinzi/DJI_ws/install/dji_driver/share/dji_driver/launch
+-- Up-to-date: /home/yinzi/DJI_ws/install/dji_driver/share/dji_driver/launch/dji_driver.launch.py
+-- Up-to-date: /home/yinzi/DJI_ws/install/dji_driver/share/ament_index/resource_index/package_run_dependencies/dji_driver
+-- Up-to-date: /home/yinzi/DJI_ws/install/dji_driver/share/ament_index/resource_index/parent_prefix_path/dji_driver
+-- Up-to-date: /home/yinzi/DJI_ws/install/dji_driver/share/dji_driver/environment/ament_prefix_path.sh
+-- Up-to-date: /home/yinzi/DJI_ws/install/dji_driver/share/dji_driver/environment/ament_prefix_path.dsv
+-- Up-to-date: /home/yinzi/DJI_ws/install/dji_driver/share/dji_driver/environment/path.sh
+-- Up-to-date: /home/yinzi/DJI_ws/install/dji_driver/share/dji_driver/environment/path.dsv
+-- Up-to-date: /home/yinzi/DJI_ws/install/dji_driver/share/dji_driver/local_setup.bash
+-- Up-to-date: /home/yinzi/DJI_ws/install/dji_driver/share/dji_driver/local_setup.sh
+-- Up-to-date: /home/yinzi/DJI_ws/install/dji_driver/share/dji_driver/local_setup.zsh
+-- Up-to-date: /home/yinzi/DJI_ws/install/dji_driver/share/dji_driver/local_setup.dsv
+-- Installing: /home/yinzi/DJI_ws/install/dji_driver/share/dji_driver/package.dsv
+-- Up-to-date: /home/yinzi/DJI_ws/install/dji_driver/share/ament_index/resource_index/packages/dji_driver
+-- Up-to-date: /home/yinzi/DJI_ws/install/dji_driver/share/dji_driver/cmake/dji_driverConfig.cmake
+-- Up-to-date: /home/yinzi/DJI_ws/install/dji_driver/share/dji_driver/cmake/dji_driverConfig-version.cmake
+-- Up-to-date: /home/yinzi/DJI_ws/install/dji_driver/share/dji_driver/package.xml

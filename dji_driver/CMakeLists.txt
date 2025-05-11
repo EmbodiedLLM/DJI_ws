@@ -11,6 +11,9 @@ find_package(rclcpp REQUIRED)
 find_package(geometry_msgs REQUIRED)
 find_package(serial REQUIRED)
 find_package(nav_msgs REQUIRED)
+find_package(tf2 REQUIRED)
+find_package(tf2_ros REQUIRED)
+find_package(tf2_geometry_msgs REQUIRED)
 
 # 添加头文件目录
 include_directories(
@@ -18,7 +21,10 @@ include_directories(
 )
 
 # 添加可执行文件
-add_executable(dji_driver_node src/dji_driver_node.cpp)
+add_executable(dji_driver_node 
+  src/dji_driver_node.cpp
+  src/dji_protocol.cpp
+)
 target_include_directories(dji_driver_node PUBLIC
   $<BUILD_INTERFACE:${CMAKE_CURRENT_SOURCE_DIR}/include>
   $<INSTALL_INTERFACE:include>)
@@ -29,6 +35,9 @@ ament_target_dependencies(
   "geometry_msgs"
   "serial"
   "nav_msgs"
+  "tf2"
+  "tf2_ros"
+  "tf2_geometry_msgs"
 )
 
 # 安装可执行文件
@@ -38,6 +47,12 @@ install(TARGETS dji_driver_node
 # 安装配置文件
 install(DIRECTORY
   config
+  DESTINATION share/${PROJECT_NAME}
+)
+
+# 安装启动文件
+install(DIRECTORY
+  launch
   DESTINATION share/${PROJECT_NAME}
 )
 

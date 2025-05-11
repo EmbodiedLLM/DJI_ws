@@ -5,6 +5,10 @@
 #include <geometry_msgs/msg/twist.hpp>
 #include <serial/serial.h>
 #include <nav_msgs/msg/odometry.hpp>
+#include <tf2_ros/transform_broadcaster.h>
+#include <tf2/LinearMath/Quaternion.h>
+#include <geometry_msgs/msg/transform_stamped.hpp>
+#include <cmath>
 #include "dji_driver/dji_protocol.hpp"
 
 namespace dji_driver
@@ -105,6 +109,25 @@ private:
      */
     void process_encoder_data(const EncoderData& data);
 
+    /**
+     * @brief 将编码器数据转换为里程计信息
+     * 
+     * 根据编码器数据计算机器人位姿变化，并发布里程计消息
+     * @param data 编码器数据结构体
+     */
+    void encoder_to_odom(const EncoderData& data);
+    
+    /**
+     * @brief 发布TF变换
+     * 
+     * 发布从odom到base_link的TF变换
+     * @param x X方向坐标
+     * @param y Y方向坐标
+     * @param theta 航向角
+     * @param stamp 时间戳
+     */
+    void publish_odom_tf(double x, double y, double theta, const rclcpp::Time& stamp);
+
     // 控制串口参数
     std::string control_port_;          ///< 控制串口设备名
     int control_baud_rate_;             ///< 控制串口波特率
@@ -122,13 +145,31 @@ private:
     double vx_max_;                     ///< X方向最大速度限制
     double vy_max_;                     ///< Y方向最大速度限制
     double wz_max_;                     ///< Z轴最大角速度限制
+    
+    // 机器人物理参数
+    double wheel_radius_;               ///< 轮子半径(m)
+    double wheel_distance_x_;           ///< 轴距(m)
+    double wheel_distance_y_;           ///< 轮距(m)
+    int encoder_resolution_;            ///< 编码器分辨率(脉冲/转)
+    double mecanum_angle_rad_;          ///< 麦克纳姆轮安装角度(弧度)
+    
+    // 里程计参数
+    std::string odom_frame_id_;         ///< 里程计坐标系名称
+    std::string base_frame_id_;         ///< 机器人坐标系名称
+    bool publish_tf_;                   ///< 是否发布TF变换
+    
     bool debug_mode_;                   ///< 调试模式开关
+    bool protocol_debug_;               ///< 协议调试模式开关，用于打印16进制协议数据
+    double debug_print_interval_;       ///< 调试信息打印间隔(秒)
+    rclcpp::Time last_tx_print_time_;   ///< 上次发送数据打印时间
+    rclcpp::Time last_rx_print_time_;   ///< 上次接收数据打印时间
 
     // ROS2相关
     rclcpp::Subscription<geometry_msgs::msg::Twist>::SharedPtr cmd_vel_sub_;      ///< cmd_vel话题订阅器
     rclcpp::Publisher<nav_msgs::msg::Odometry>::SharedPtr odom_pub_;              ///< odom话题发布器
     rclcpp::TimerBase::SharedPtr encoder_read_timer_;                             ///< 编码器读取定时器
     rclcpp::TimerBase::SharedPtr control_write_timer_;                            ///< 控制指令发送定时器
+    std::shared_ptr<tf2_ros::TransformBroadcaster> tf_broadcaster_;               ///< TF变换广播器
 
     // 串口相关
     serial::Serial control_serial_;     ///< 用于发送控制命令的串口对象
@@ -137,14 +178,16 @@ private:
     bool encoder_connected_;            ///< 编码器串口连接状态标志
     ControlCommand current_cmd_;        ///< 当前的控制命令
     EncoderData latest_encoder_data_;   ///< 最新接收到的编码器数据
-
-    /**
-     * @brief 将编码器数据转换为里程计信息
-     * 
-     * 根据编码器数据计算机器人位姿变化，并发布里程计消息
-     * @param data 编码器数据结构体
-     */
-    void encoder_to_odom(const EncoderData& data);
+    
+    // 里程计计算相关
+    double x_, y_, theta_;              ///< 当前位姿
+    double vx_, vy_, vtheta_;           ///< 当前速度
+    int32_t last_fl_encoder_;           ///< 上次左前轮编码器值
+    int32_t last_fr_encoder_;           ///< 上次右前轮编码器值
+    int32_t last_rl_encoder_;           ///< 上次左后轮编码器值
+    int32_t last_rr_encoder_;           ///< 上次右后轮编码器值
+    rclcpp::Time last_encoder_time_;    ///< 上次编码器数据时间戳
+    bool first_encoder_received_;       ///< 是否收到第一帧编码器数据
 };
 
 } // namespace dji_driver

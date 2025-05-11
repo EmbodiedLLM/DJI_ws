@@ -1,5 +1,6 @@
 /home/yinzi/DJI_ws/install/dji_driver/lib/dji_driver/dji_driver_node
 /home/yinzi/DJI_ws/install/dji_driver/share/dji_driver/config/dji_driver_params.yaml
+/home/yinzi/DJI_ws/install/dji_driver/share/dji_driver/launch/dji_driver.launch.py
 /home/yinzi/DJI_ws/install/dji_driver/share/ament_index/resource_index/package_run_dependencies/dji_driver
 /home/yinzi/DJI_ws/install/dji_driver/share/ament_index/resource_index/parent_prefix_path/dji_driver
 /home/yinzi/DJI_ws/install/dji_driver/share/dji_driver/environment/ament_prefix_path.sh

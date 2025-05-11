@@ -646,4 +646,29 @@ CMakeFiles/dji_driver_node.dir/src/dji_driver_node.cpp.o: \
  /opt/ros/humble/include/geometry_msgs/geometry_msgs/msg/detail/twist_with_covariance__traits.hpp \
  /opt/ros/humble/include/nav_msgs/nav_msgs/msg/detail/odometry__type_support.hpp \
  /opt/ros/humble/include/nav_msgs/nav_msgs/msg/rosidl_generator_cpp__visibility_control.hpp \
+ /opt/ros/humble/include/tf2_ros/tf2_ros/transform_broadcaster.h \
+ /opt/ros/humble/include/tf2_ros/tf2_ros/visibility_control.h \
+ /opt/ros/humble/include/geometry_msgs/geometry_msgs/msg/transform_stamped.hpp \
+ /opt/ros/humble/include/geometry_msgs/geometry_msgs/msg/detail/transform_stamped__struct.hpp \
+ /opt/ros/humble/include/geometry_msgs/geometry_msgs/msg/detail/transform__struct.hpp \
+ /opt/ros/humble/include/geometry_msgs/geometry_msgs/msg/detail/transform_stamped__builder.hpp \
+ /opt/ros/humble/include/geometry_msgs/geometry_msgs/msg/detail/transform_stamped__traits.hpp \
+ /opt/ros/humble/include/geometry_msgs/geometry_msgs/msg/detail/transform__traits.hpp \
+ /opt/ros/humble/include/geometry_msgs/geometry_msgs/msg/detail/transform_stamped__type_support.hpp \
+ /opt/ros/humble/include/tf2_msgs/tf2_msgs/msg/tf_message.hpp \
+ /opt/ros/humble/include/tf2_msgs/tf2_msgs/msg/detail/tf_message__struct.hpp \
+ /opt/ros/humble/include/tf2_msgs/tf2_msgs/msg/detail/tf_message__builder.hpp \
+ /opt/ros/humble/include/tf2_msgs/tf2_msgs/msg/detail/tf_message__traits.hpp \
+ /opt/ros/humble/include/tf2_msgs/tf2_msgs/msg/detail/tf_message__type_support.hpp \
+ /opt/ros/humble/include/tf2_msgs/tf2_msgs/msg/rosidl_generator_cpp__visibility_control.hpp \
+ /opt/ros/humble/include/tf2_ros/tf2_ros/qos.hpp \
+ /opt/ros/humble/include/tf2/tf2/LinearMath/Quaternion.h \
+ /opt/ros/humble/include/tf2/tf2/LinearMath/Quaternion.hpp \
+ /opt/ros/humble/include/tf2/tf2/LinearMath/Vector3.hpp \
+ /opt/ros/humble/include/tf2/tf2/LinearMath/Scalar.hpp \
+ /usr/include/c++/11/math.h /usr/include/c++/11/cfloat \
+ /usr/lib/gcc/x86_64-linux-gnu/11/include/float.h \
+ /opt/ros/humble/include/tf2/tf2/LinearMath/MinMax.hpp \
+ /opt/ros/humble/include/tf2/tf2/visibility_control.h \
+ /opt/ros/humble/include/tf2/tf2/LinearMath/QuadWord.hpp \
  /home/yinzi/DJI_ws/dji_driver/include/dji_driver/dji_protocol.hpp

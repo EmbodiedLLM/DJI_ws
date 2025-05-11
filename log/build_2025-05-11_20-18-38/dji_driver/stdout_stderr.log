@@ -1,0 +1,36 @@
+[ 33%] [32mBuilding CXX object CMakeFiles/dji_driver_node.dir/src/dji_driver_node.cpp.o[0m
+In file included from [01m[K/home/yinzi/DJI_ws/dji_driver/src/dji_driver_node.cpp:1[m[K:
+[01m[K/home/yinzi/DJI_ws/dji_driver/include/dji_driver/dji_driver_node.hpp:[m[K In constructor ‘[01m[Kdji_driver::DJIDriverNode::DJIDriverNode()[m[K’:
+[01m[K/home/yinzi/DJI_ws/dji_driver/include/dji_driver/dji_driver_node.hpp:178:10:[m[K [01;35m[Kwarning: [m[K‘[01m[Kdji_driver::DJIDriverNode::encoder_connected_[m[K’ will be initialized after [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wreorder-Wreorder]8;;[m[K]
+  178 |     bool [01;35m[Kencoder_connected_[m[K;            ///< 编码器串口连接状态标志
+      |          [01;35m[K^~~~~~~~~~~~~~~~~~[m[K
+[01m[K/home/yinzi/DJI_ws/dji_driver/include/dji_driver/dji_driver_node.hpp:164:18:[m[K [01;35m[Kwarning: [m[K  ‘[01m[Krclcpp::Time dji_driver::DJIDriverNode::last_tx_print_time_[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wreorder-Wreorder]8;;[m[K]
+  164 |     rclcpp::Time [01;35m[Klast_tx_print_time_[m[K;   ///< 上次发送数据打印时间
+      |                  [01;35m[K^~~~~~~~~~~~~~~~~~~[m[K
+[01m[K/home/yinzi/DJI_ws/dji_driver/src/dji_driver_node.cpp:18:1:[m[K [01;35m[Kwarning: [m[K  when initialized here [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wreorder-Wreorder]8;;[m[K]
+   18 | [01;35m[KDJIDriverNode[m[K::DJIDriverNode()
+      | [01;35m[K^~~~~~~~~~~~~[m[K
+[ 66%] [32m[1mLinking CXX executable dji_driver_node[0m
+[100%] Built target dji_driver_node
+-- Install configuration: ""
+-- Installing: /home/yinzi/DJI_ws/install/dji_driver/lib/dji_driver/dji_driver_node
+-- Set runtime path of "/home/yinzi/DJI_ws/install/dji_driver/lib/dji_driver/dji_driver_node" to ""
+-- Up-to-date: /home/yinzi/DJI_ws/install/dji_driver/share/dji_driver/config
+-- Up-to-date: /home/yinzi/DJI_ws/install/dji_driver/share/dji_driver/config/dji_driver_params.yaml
+-- Up-to-date: /home/yinzi/DJI_ws/install/dji_driver/share/dji_driver/launch
+-- Up-to-date: /home/yinzi/DJI_ws/install/dji_driver/share/dji_driver/launch/dji_driver.launch.py
+-- Up-to-date: /home/yinzi/DJI_ws/install/dji_driver/share/ament_index/resource_index/package_run_dependencies/dji_driver
+-- Up-to-date: /home/yinzi/DJI_ws/install/dji_driver/share/ament_index/resource_index/parent_prefix_path/dji_driver
+-- Up-to-date: /home/yinzi/DJI_ws/install/dji_driver/share/dji_driver/environment/ament_prefix_path.sh
+-- Up-to-date: /home/yinzi/DJI_ws/install/dji_driver/share/dji_driver/environment/ament_prefix_path.dsv
+-- Up-to-date: /home/yinzi/DJI_ws/install/dji_driver/share/dji_driver/environment/path.sh
+-- Up-to-date: /home/yinzi/DJI_ws/install/dji_driver/share/dji_driver/environment/path.dsv
+-- Up-to-date: /home/yinzi/DJI_ws/install/dji_driver/share/dji_driver/local_setup.bash
+-- Up-to-date: /home/yinzi/DJI_ws/install/dji_driver/share/dji_driver/local_setup.sh
+-- Up-to-date: /home/yinzi/DJI_ws/install/dji_driver/share/dji_driver/local_setup.zsh
+-- Up-to-date: /home/yinzi/DJI_ws/install/dji_driver/share/dji_driver/local_setup.dsv
+-- Installing: /home/yinzi/DJI_ws/install/dji_driver/share/dji_driver/package.dsv
+-- Up-to-date: /home/yinzi/DJI_ws/install/dji_driver/share/ament_index/resource_index/packages/dji_driver
+-- Up-to-date: /home/yinzi/DJI_ws/install/dji_driver/share/dji_driver/cmake/dji_driverConfig.cmake
+-- Up-to-date: /home/yinzi/DJI_ws/install/dji_driver/share/dji_driver/cmake/dji_driverConfig-version.cmake
+-- Up-to-date: /home/yinzi/DJI_ws/install/dji_driver/share/dji_driver/package.xml

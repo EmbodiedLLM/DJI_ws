@@ -7,7 +7,7 @@
 				{
 					"build" : ".",
 					"hasInstallRule" : true,
-					"jsonFile" : "directory-.-4693dbd370ee2cc06125.json",
+					"jsonFile" : "directory-.-5040eec16c31e8159e31.json",
 					"minimumCMakeVersion" : 
 					{
 						"string" : "3.12"
@@ -44,7 +44,7 @@
 				{
 					"directoryIndex" : 0,
 					"id" : "dji_driver_node::@6890427a1f51a3e7e1df",
-					"jsonFile" : "target-dji_driver_node-80ae523cd865a9fbb48f.json",
+					"jsonFile" : "target-dji_driver_node-20021c2454bf1ce0474a.json",
 					"name" : "dji_driver_node",
 					"projectIndex" : 0
 				},
