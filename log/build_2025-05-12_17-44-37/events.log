@@ -1,0 +1,283 @@
+[0.000000] (-) TimerEvent: {}
+[0.000892] (serial) JobQueued: {'identifier': 'serial', 'dependencies': OrderedDict()}
+[0.001224] (dji_driver) JobQueued: {'identifier': 'dji_driver', 'dependencies': OrderedDict([('serial', '/home/nvidia/dji_ws2/DJI_ws/install/serial')])}
+[0.001346] (serial) JobStarted: {'identifier': 'serial'}
+[0.016436] (serial) JobProgress: {'identifier': 'serial', 'progress': 'cmake'}
+[0.017520] (serial) JobProgress: {'identifier': 'serial', 'progress': 'build'}
+[0.018731] (serial) Command: {'cmd': ['/usr/bin/cmake', '--build', '/home/nvidia/dji_ws2/DJI_ws/build/serial', '--', '-j4', '-l4'], 'cwd': '/home/nvidia/dji_ws2/DJI_ws/build/serial', 'env': OrderedDict([('LESSOPEN', '| /usr/bin/lesspipe %s'), ('LIBRARY_PATH', '/usr/local/cuda-12.6/lib64:/usr/local/cuda-12.6/lib64:'), ('USER', 'nvidia'), ('SSH_CLIENT', '10.90.0.102 61115 22'), ('LC_TIME', 'zh_CN.UTF-8'), ('XDG_SESSION_TYPE', 'tty'), ('GIT_ASKPASS', '/home/nvidia/.cursor-server/cli/servers/Stable-0781e811de386a0c5bcb07ceb259df8ff8246a50/server/extensions/git/dist/askpass.sh'), ('SHLVL', '1'), ('LD_LIBRARY_PATH', '/home/nvidia/dji_ws2/DJI_ws/install/serial/lib:/usr/local/cuda-12.6/lib64:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/aarch64-linux-gnu:/opt/ros/humble/lib:/usr/local/cuda-12.6/lib64:'), ('BROWSER', '/home/nvidia/.cursor-server/cli/servers/Stable-0781e811de386a0c5bcb07ceb259df8ff8246a50/server/bin/helpers/browser.sh'), ('MOTD_SHOWN', 'pam'), ('HOME', '/home/nvidia'), ('TERM_PROGRAM_VERSION', '0.49.6'), ('VSCODE_IPC_HOOK_CLI', '/run/user/1000/vscode-ipc-c0cddda3-b535-4fb3-b747-a9fd66e4f5d4.sock'), ('JETSON_L4T', '36.4.3'), ('ROS_PYTHON_VERSION', '3'), ('GNOME_SHELL_SESSION_MODE', 'ubuntu'), ('JETSON_MODEL', 'NVIDIA Jetson Orin NX Engineering Reference Developer Kit'), ('VSCODE_GIT_ASKPASS_MAIN', '/home/nvidia/.cursor-server/cli/servers/Stable-0781e811de386a0c5bcb07ceb259df8ff8246a50/server/extensions/git/dist/askpass-main.js'), ('LC_MONETARY', 'zh_CN.UTF-8'), ('VSCODE_GIT_ASKPASS_NODE', '/home/nvidia/.cursor-server/cli/servers/Stable-0781e811de386a0c5bcb07ceb259df8ff8246a50/server/node'), ('SSL_CERT_FILE', '/usr/lib/ssl/certs/ca-certificates.crt'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000/bus'), ('COLORTERM', 'truecolor'), ('COLCON_PREFIX_PATH', '/home/nvidia/dji_ws2/DJI_ws/install'), ('ROS_DISTRO', 'humble'), ('LOGNAME', 'nvidia'), ('JETSON_MODULE', ''), ('JETSON_SERIAL_NUMBER', '1424624348657'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('XDG_SESSION_CLASS', 'user'), ('TERM', 'xterm-256color'), ('XDG_SESSION_ID', '4'), ('ISAAC_ROS_WS', '/mnt/nova_ssd/workspaces/isaac_ros-dev/'), ('ROS_LOCALHOST_ONLY', '0'), ('PATH', '/usr/local/cuda-12.6/bin:/home/nvidia/.cursor-server/cli/servers/Stable-0781e811de386a0c5bcb07ceb259df8ff8246a50/server/bin/remote-cli:/home/nvidia/.local/bin:/opt/ros/humble/bin:/usr/local/cuda-12.6/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/home/nvidia/.cursor-server/data/User/globalStorage/github.copilot-chat/debugCommand'), ('PAPERSIZE', 'a4'), ('LC_ADDRESS', 'zh_CN.UTF-8'), ('XDG_RUNTIME_DIR', '/run/user/1000'), ('SSL_CERT_DIR', '/usr/lib/ssl/certs'), ('DISPLAY', ':0'), ('LANG', 'en_US.UTF-8'), ('XDG_CURRENT_DESKTOP', 'ubuntu:GNOME'), ('LC_TELEPHONE', 'zh_CN.UTF-8'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('JETSON_SOC', 'tegra234'), ('VSCODE_GIT_IPC_HANDLE', '/run/user/1000/vscode-git-dd3090e221.sock'), ('TERM_PROGRAM', 'vscode'), ('AMENT_PREFIX_PATH', '/home/nvidia/dji_ws2/DJI_ws/install/dji_driver:/home/nvidia/dji_ws2/DJI_ws/install/serial:/opt/ros/humble'), ('SHELL', '/bin/bash'), ('LC_NAME', 'zh_CN.UTF-8'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('LC_MEASUREMENT', 'zh_CN.UTF-8'), ('LC_IDENTIFICATION', 'zh_CN.UTF-8'), ('VSCODE_GIT_ASKPASS_EXTRA_ARGS', ''), ('JETSON_CUDA_ARCH_BIN', '8.7'), ('PWD', '/home/nvidia/dji_ws2/DJI_ws/build/serial'), ('LC_ALL', 'en_US.UTF-8'), ('SSH_CONNECTION', '10.90.0.102 61115 10.90.0.109 22'), ('XDG_DATA_DIRS', '/usr/share/gnome:/usr/local/share:/usr/share:/var/lib/snapd/desktop'), ('PYTHONPATH', '/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages'), ('LC_NUMERIC', 'zh_CN.UTF-8'), ('LC_PAPER', 'zh_CN.UTF-8'), ('COLCON', '1'), ('JETSON_JETPACK', '6.2'), ('CMAKE_PREFIX_PATH', '/home/nvidia/dji_ws2/DJI_ws/install/dji_driver:/home/nvidia/dji_ws2/DJI_ws/install/serial:/opt/ros/humble')]), 'shell': False}
+[0.099025] (-) TimerEvent: {}
+[0.111771] (serial) StdoutLine: {'line': b'[100%] Built target serial\n'}
+[0.133192] (serial) CommandEnded: {'returncode': 0}
+[0.134569] (serial) JobProgress: {'identifier': 'serial', 'progress': 'install'}
+[0.150072] (serial) Command: {'cmd': ['/usr/bin/cmake', '--install', '/home/nvidia/dji_ws2/DJI_ws/build/serial'], 'cwd': '/home/nvidia/dji_ws2/DJI_ws/build/serial', 'env': OrderedDict([('LESSOPEN', '| /usr/bin/lesspipe %s'), ('LIBRARY_PATH', '/usr/local/cuda-12.6/lib64:/usr/local/cuda-12.6/lib64:'), ('USER', 'nvidia'), ('SSH_CLIENT', '10.90.0.102 61115 22'), ('LC_TIME', 'zh_CN.UTF-8'), ('XDG_SESSION_TYPE', 'tty'), ('GIT_ASKPASS', '/home/nvidia/.cursor-server/cli/servers/Stable-0781e811de386a0c5bcb07ceb259df8ff8246a50/server/extensions/git/dist/askpass.sh'), ('SHLVL', '1'), ('LD_LIBRARY_PATH', '/home/nvidia/dji_ws2/DJI_ws/install/serial/lib:/usr/local/cuda-12.6/lib64:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/aarch64-linux-gnu:/opt/ros/humble/lib:/usr/local/cuda-12.6/lib64:'), ('BROWSER', '/home/nvidia/.cursor-server/cli/servers/Stable-0781e811de386a0c5bcb07ceb259df8ff8246a50/server/bin/helpers/browser.sh'), ('MOTD_SHOWN', 'pam'), ('HOME', '/home/nvidia'), ('TERM_PROGRAM_VERSION', '0.49.6'), ('VSCODE_IPC_HOOK_CLI', '/run/user/1000/vscode-ipc-c0cddda3-b535-4fb3-b747-a9fd66e4f5d4.sock'), ('JETSON_L4T', '36.4.3'), ('ROS_PYTHON_VERSION', '3'), ('GNOME_SHELL_SESSION_MODE', 'ubuntu'), ('JETSON_MODEL', 'NVIDIA Jetson Orin NX Engineering Reference Developer Kit'), ('VSCODE_GIT_ASKPASS_MAIN', '/home/nvidia/.cursor-server/cli/servers/Stable-0781e811de386a0c5bcb07ceb259df8ff8246a50/server/extensions/git/dist/askpass-main.js'), ('LC_MONETARY', 'zh_CN.UTF-8'), ('VSCODE_GIT_ASKPASS_NODE', '/home/nvidia/.cursor-server/cli/servers/Stable-0781e811de386a0c5bcb07ceb259df8ff8246a50/server/node'), ('SSL_CERT_FILE', '/usr/lib/ssl/certs/ca-certificates.crt'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000/bus'), ('COLORTERM', 'truecolor'), ('COLCON_PREFIX_PATH', '/home/nvidia/dji_ws2/DJI_ws/install'), ('ROS_DISTRO', 'humble'), ('LOGNAME', 'nvidia'), ('JETSON_MODULE', ''), ('JETSON_SERIAL_NUMBER', '1424624348657'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('XDG_SESSION_CLASS', 'user'), ('TERM', 'xterm-256color'), ('XDG_SESSION_ID', '4'), ('ISAAC_ROS_WS', '/mnt/nova_ssd/workspaces/isaac_ros-dev/'), ('ROS_LOCALHOST_ONLY', '0'), ('PATH', '/usr/local/cuda-12.6/bin:/home/nvidia/.cursor-server/cli/servers/Stable-0781e811de386a0c5bcb07ceb259df8ff8246a50/server/bin/remote-cli:/home/nvidia/.local/bin:/opt/ros/humble/bin:/usr/local/cuda-12.6/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/home/nvidia/.cursor-server/data/User/globalStorage/github.copilot-chat/debugCommand'), ('PAPERSIZE', 'a4'), ('LC_ADDRESS', 'zh_CN.UTF-8'), ('XDG_RUNTIME_DIR', '/run/user/1000'), ('SSL_CERT_DIR', '/usr/lib/ssl/certs'), ('DISPLAY', ':0'), ('LANG', 'en_US.UTF-8'), ('XDG_CURRENT_DESKTOP', 'ubuntu:GNOME'), ('LC_TELEPHONE', 'zh_CN.UTF-8'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('JETSON_SOC', 'tegra234'), ('VSCODE_GIT_IPC_HANDLE', '/run/user/1000/vscode-git-dd3090e221.sock'), ('TERM_PROGRAM', 'vscode'), ('AMENT_PREFIX_PATH', '/home/nvidia/dji_ws2/DJI_ws/install/dji_driver:/home/nvidia/dji_ws2/DJI_ws/install/serial:/opt/ros/humble'), ('SHELL', '/bin/bash'), ('LC_NAME', 'zh_CN.UTF-8'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('LC_MEASUREMENT', 'zh_CN.UTF-8'), ('LC_IDENTIFICATION', 'zh_CN.UTF-8'), ('VSCODE_GIT_ASKPASS_EXTRA_ARGS', ''), ('JETSON_CUDA_ARCH_BIN', '8.7'), ('PWD', '/home/nvidia/dji_ws2/DJI_ws/build/serial'), ('LC_ALL', 'en_US.UTF-8'), ('SSH_CONNECTION', '10.90.0.102 61115 10.90.0.109 22'), ('XDG_DATA_DIRS', '/usr/share/gnome:/usr/local/share:/usr/share:/var/lib/snapd/desktop'), ('PYTHONPATH', '/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages'), ('LC_NUMERIC', 'zh_CN.UTF-8'), ('LC_PAPER', 'zh_CN.UTF-8'), ('COLCON', '1'), ('JETSON_JETPACK', '6.2'), ('CMAKE_PREFIX_PATH', '/home/nvidia/dji_ws2/DJI_ws/install/dji_driver:/home/nvidia/dji_ws2/DJI_ws/install/serial:/opt/ros/humble')]), 'shell': False}
+[0.165947] (serial) StdoutLine: {'line': b'-- Install configuration: ""\n'}
+[0.166419] (serial) StdoutLine: {'line': b'-- Up-to-date: /home/nvidia/dji_ws2/DJI_ws/install/serial/share/serial/environment/library_path.sh\n'}
+[0.166675] (serial) StdoutLine: {'line': b'-- Up-to-date: /home/nvidia/dji_ws2/DJI_ws/install/serial/share/serial/environment/library_path.dsv\n'}
+[0.166908] (serial) StdoutLine: {'line': b'-- Up-to-date: /home/nvidia/dji_ws2/DJI_ws/install/serial/lib/libserial.a\n'}
+[0.167095] (serial) StdoutLine: {'line': b'-- Up-to-date: /home/nvidia/dji_ws2/DJI_ws/install/serial/include/serial/serial.h\n'}
+[0.167316] (serial) StdoutLine: {'line': b'-- Up-to-date: /home/nvidia/dji_ws2/DJI_ws/install/serial/include/serial/v8stdint.h\n'}
+[0.167494] (serial) StdoutLine: {'line': b'-- Up-to-date: /home/nvidia/dji_ws2/DJI_ws/install/serial/share/ament_index/resource_index/package_run_dependencies/serial\n'}
+[0.167678] (serial) StdoutLine: {'line': b'-- Up-to-date: /home/nvidia/dji_ws2/DJI_ws/install/serial/share/ament_index/resource_index/parent_prefix_path/serial\n'}
+[0.167882] (serial) StdoutLine: {'line': b'-- Up-to-date: /home/nvidia/dji_ws2/DJI_ws/install/serial/share/serial/environment/ament_prefix_path.sh\n'}
+[0.168090] (serial) StdoutLine: {'line': b'-- Up-to-date: /home/nvidia/dji_ws2/DJI_ws/install/serial/share/serial/environment/ament_prefix_path.dsv\n'}
+[0.168267] (serial) StdoutLine: {'line': b'-- Up-to-date: /home/nvidia/dji_ws2/DJI_ws/install/serial/share/serial/environment/path.sh\n'}
+[0.168412] (serial) StdoutLine: {'line': b'-- Up-to-date: /home/nvidia/dji_ws2/DJI_ws/install/serial/share/serial/environment/path.dsv\n'}
+[0.168548] (serial) StdoutLine: {'line': b'-- Up-to-date: /home/nvidia/dji_ws2/DJI_ws/install/serial/share/serial/local_setup.bash\n'}
+[0.168684] (serial) StdoutLine: {'line': b'-- Up-to-date: /home/nvidia/dji_ws2/DJI_ws/install/serial/share/serial/local_setup.sh\n'}
+[0.168816] (serial) StdoutLine: {'line': b'-- Up-to-date: /home/nvidia/dji_ws2/DJI_ws/install/serial/share/serial/local_setup.zsh\n'}
+[0.168946] (serial) StdoutLine: {'line': b'-- Up-to-date: /home/nvidia/dji_ws2/DJI_ws/install/serial/share/serial/local_setup.dsv\n'}
+[0.169078] (serial) StdoutLine: {'line': b'-- Installing: /home/nvidia/dji_ws2/DJI_ws/install/serial/share/serial/package.dsv\n'}
+[0.169208] (serial) StdoutLine: {'line': b'-- Up-to-date: /home/nvidia/dji_ws2/DJI_ws/install/serial/share/ament_index/resource_index/packages/serial\n'}
+[0.169338] (serial) StdoutLine: {'line': b'-- Up-to-date: /home/nvidia/dji_ws2/DJI_ws/install/serial/share/serial/cmake/ament_cmake_export_include_directories-extras.cmake\n'}
+[0.169469] (serial) StdoutLine: {'line': b'-- Up-to-date: /home/nvidia/dji_ws2/DJI_ws/install/serial/share/serial/cmake/ament_cmake_export_libraries-extras.cmake\n'}
+[0.169599] (serial) StdoutLine: {'line': b'-- Up-to-date: /home/nvidia/dji_ws2/DJI_ws/install/serial/share/serial/cmake/serialConfig.cmake\n'}
+[0.169728] (serial) StdoutLine: {'line': b'-- Up-to-date: /home/nvidia/dji_ws2/DJI_ws/install/serial/share/serial/cmake/serialConfig-version.cmake\n'}
+[0.169857] (serial) StdoutLine: {'line': b'-- Up-to-date: /home/nvidia/dji_ws2/DJI_ws/install/serial/share/serial/package.xml\n'}
+[0.171384] (serial) CommandEnded: {'returncode': 0}
+[0.199330] (-) TimerEvent: {}
+[0.257122] (serial) JobEnded: {'identifier': 'serial', 'rc': 0}
+[0.259644] (dji_driver) JobStarted: {'identifier': 'dji_driver'}
+[0.274690] (dji_driver) JobProgress: {'identifier': 'dji_driver', 'progress': 'cmake'}
+[0.275982] (dji_driver) JobProgress: {'identifier': 'dji_driver', 'progress': 'build'}
+[0.277787] (dji_driver) Command: {'cmd': ['/usr/bin/cmake', '--build', '/home/nvidia/dji_ws2/DJI_ws/build/dji_driver', '--', '-j4', '-l4'], 'cwd': '/home/nvidia/dji_ws2/DJI_ws/build/dji_driver', 'env': OrderedDict([('LESSOPEN', '| /usr/bin/lesspipe %s'), ('LIBRARY_PATH', '/usr/local/cuda-12.6/lib64:/usr/local/cuda-12.6/lib64:'), ('USER', 'nvidia'), ('SSH_CLIENT', '10.90.0.102 61115 22'), ('LC_TIME', 'zh_CN.UTF-8'), ('XDG_SESSION_TYPE', 'tty'), ('GIT_ASKPASS', '/home/nvidia/.cursor-server/cli/servers/Stable-0781e811de386a0c5bcb07ceb259df8ff8246a50/server/extensions/git/dist/askpass.sh'), ('SHLVL', '1'), ('LD_LIBRARY_PATH', '/home/nvidia/dji_ws2/DJI_ws/install/serial/lib:/usr/local/cuda-12.6/lib64:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/aarch64-linux-gnu:/opt/ros/humble/lib:/usr/local/cuda-12.6/lib64:'), ('BROWSER', '/home/nvidia/.cursor-server/cli/servers/Stable-0781e811de386a0c5bcb07ceb259df8ff8246a50/server/bin/helpers/browser.sh'), ('MOTD_SHOWN', 'pam'), ('HOME', '/home/nvidia'), ('TERM_PROGRAM_VERSION', '0.49.6'), ('VSCODE_IPC_HOOK_CLI', '/run/user/1000/vscode-ipc-c0cddda3-b535-4fb3-b747-a9fd66e4f5d4.sock'), ('JETSON_L4T', '36.4.3'), ('ROS_PYTHON_VERSION', '3'), ('GNOME_SHELL_SESSION_MODE', 'ubuntu'), ('JETSON_MODEL', 'NVIDIA Jetson Orin NX Engineering Reference Developer Kit'), ('VSCODE_GIT_ASKPASS_MAIN', '/home/nvidia/.cursor-server/cli/servers/Stable-0781e811de386a0c5bcb07ceb259df8ff8246a50/server/extensions/git/dist/askpass-main.js'), ('LC_MONETARY', 'zh_CN.UTF-8'), ('VSCODE_GIT_ASKPASS_NODE', '/home/nvidia/.cursor-server/cli/servers/Stable-0781e811de386a0c5bcb07ceb259df8ff8246a50/server/node'), ('SSL_CERT_FILE', '/usr/lib/ssl/certs/ca-certificates.crt'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000/bus'), ('COLORTERM', 'truecolor'), ('COLCON_PREFIX_PATH', '/home/nvidia/dji_ws2/DJI_ws/install'), ('ROS_DISTRO', 'humble'), ('LOGNAME', 'nvidia'), ('JETSON_MODULE', ''), ('JETSON_SERIAL_NUMBER', '1424624348657'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('XDG_SESSION_CLASS', 'user'), ('TERM', 'xterm-256color'), ('XDG_SESSION_ID', '4'), ('ISAAC_ROS_WS', '/mnt/nova_ssd/workspaces/isaac_ros-dev/'), ('ROS_LOCALHOST_ONLY', '0'), ('PATH', '/usr/local/cuda-12.6/bin:/home/nvidia/.cursor-server/cli/servers/Stable-0781e811de386a0c5bcb07ceb259df8ff8246a50/server/bin/remote-cli:/home/nvidia/.local/bin:/opt/ros/humble/bin:/usr/local/cuda-12.6/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/home/nvidia/.cursor-server/data/User/globalStorage/github.copilot-chat/debugCommand'), ('PAPERSIZE', 'a4'), ('LC_ADDRESS', 'zh_CN.UTF-8'), ('XDG_RUNTIME_DIR', '/run/user/1000'), ('SSL_CERT_DIR', '/usr/lib/ssl/certs'), ('DISPLAY', ':0'), ('LANG', 'en_US.UTF-8'), ('XDG_CURRENT_DESKTOP', 'ubuntu:GNOME'), ('LC_TELEPHONE', 'zh_CN.UTF-8'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('JETSON_SOC', 'tegra234'), ('VSCODE_GIT_IPC_HANDLE', '/run/user/1000/vscode-git-dd3090e221.sock'), ('TERM_PROGRAM', 'vscode'), ('AMENT_PREFIX_PATH', '/home/nvidia/dji_ws2/DJI_ws/install/dji_driver:/home/nvidia/dji_ws2/DJI_ws/install/serial:/opt/ros/humble'), ('SHELL', '/bin/bash'), ('LC_NAME', 'zh_CN.UTF-8'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('LC_MEASUREMENT', 'zh_CN.UTF-8'), ('LC_IDENTIFICATION', 'zh_CN.UTF-8'), ('VSCODE_GIT_ASKPASS_EXTRA_ARGS', ''), ('JETSON_CUDA_ARCH_BIN', '8.7'), ('PWD', '/home/nvidia/dji_ws2/DJI_ws/build/dji_driver'), ('LC_ALL', 'en_US.UTF-8'), ('SSH_CONNECTION', '10.90.0.102 61115 10.90.0.109 22'), ('XDG_DATA_DIRS', '/usr/share/gnome:/usr/local/share:/usr/share:/var/lib/snapd/desktop'), ('PYTHONPATH', '/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages'), ('LC_NUMERIC', 'zh_CN.UTF-8'), ('LC_PAPER', 'zh_CN.UTF-8'), ('COLCON', '1'), ('JETSON_JETPACK', '6.2'), ('CMAKE_PREFIX_PATH', '/home/nvidia/dji_ws2/DJI_ws/install/serial:/home/nvidia/dji_ws2/DJI_ws/install/dji_driver:/opt/ros/humble')]), 'shell': False}
+[0.299499] (-) TimerEvent: {}
+[0.357042] (dji_driver) StdoutLine: {'line': b'\x1b[35m\x1b[1mConsolidate compiler generated dependencies of target dji_driver_node\x1b[0m\n'}
+[0.393275] (dji_driver) StdoutLine: {'line': b'[ 25%] \x1b[32mBuilding CXX object CMakeFiles/dji_driver_node.dir/src/dji_driver_node.cpp.o\x1b[0m\n'}
+[0.399708] (-) TimerEvent: {}
+[0.500194] (-) TimerEvent: {}
+[0.600771] (-) TimerEvent: {}
+[0.701332] (-) TimerEvent: {}
+[0.801910] (-) TimerEvent: {}
+[0.902490] (-) TimerEvent: {}
+[1.003076] (-) TimerEvent: {}
+[1.103685] (-) TimerEvent: {}
+[1.204269] (-) TimerEvent: {}
+[1.304856] (-) TimerEvent: {}
+[1.405451] (-) TimerEvent: {}
+[1.506038] (-) TimerEvent: {}
+[1.606637] (-) TimerEvent: {}
+[1.707231] (-) TimerEvent: {}
+[1.807862] (-) TimerEvent: {}
+[1.908463] (-) TimerEvent: {}
+[2.009068] (-) TimerEvent: {}
+[2.109667] (-) TimerEvent: {}
+[2.210300] (-) TimerEvent: {}
+[2.311049] (-) TimerEvent: {}
+[2.411662] (-) TimerEvent: {}
+[2.512244] (-) TimerEvent: {}
+[2.612839] (-) TimerEvent: {}
+[2.713432] (-) TimerEvent: {}
+[2.814030] (-) TimerEvent: {}
+[2.914627] (-) TimerEvent: {}
+[3.015212] (-) TimerEvent: {}
+[3.115839] (-) TimerEvent: {}
+[3.216441] (-) TimerEvent: {}
+[3.317026] (-) TimerEvent: {}
+[3.417630] (-) TimerEvent: {}
+[3.518231] (-) TimerEvent: {}
+[3.618837] (-) TimerEvent: {}
+[3.719452] (-) TimerEvent: {}
+[3.820086] (-) TimerEvent: {}
+[3.920676] (-) TimerEvent: {}
+[4.021289] (-) TimerEvent: {}
+[4.121882] (-) TimerEvent: {}
+[4.222471] (-) TimerEvent: {}
+[4.323078] (-) TimerEvent: {}
+[4.423688] (-) TimerEvent: {}
+[4.524275] (-) TimerEvent: {}
+[4.624860] (-) TimerEvent: {}
+[4.725461] (-) TimerEvent: {}
+[4.826052] (-) TimerEvent: {}
+[4.926635] (-) TimerEvent: {}
+[5.027256] (-) TimerEvent: {}
+[5.127853] (-) TimerEvent: {}
+[5.228445] (-) TimerEvent: {}
+[5.329030] (-) TimerEvent: {}
+[5.429616] (-) TimerEvent: {}
+[5.530204] (-) TimerEvent: {}
+[5.583935] (dji_driver) StderrLine: {'line': b'In file included from \x1b[01m\x1b[K/home/nvidia/dji_ws2/DJI_ws/src/dji_driver/src/dji_driver_node.cpp:1\x1b[m\x1b[K:\n'}
+[5.584470] (dji_driver) StderrLine: {'line': b'\x1b[01m\x1b[K/home/nvidia/dji_ws2/DJI_ws/src/dji_driver/include/dji_driver/dji_driver_node.hpp:\x1b[m\x1b[K In constructor \xe2\x80\x98\x1b[01m\x1b[Kdji_driver::DJIDriverNode::DJIDriverNode()\x1b[m\x1b[K\xe2\x80\x99:\n'}
+[5.584655] (dji_driver) StderrLine: {'line': b'\x1b[01m\x1b[K/home/nvidia/dji_ws2/DJI_ws/src/dji_driver/include/dji_driver/dji_driver_node.hpp:178:10:\x1b[m\x1b[K \x1b[01;35m\x1b[Kwarning: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[Kdji_driver::DJIDriverNode::encoder_connected_\x1b[m\x1b[K\xe2\x80\x99 will be initialized after [\x1b[01;35m\x1b[K\x1b]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wreorder\x07-Wreorder\x1b]8;;\x07\x1b[m\x1b[K]\n'}
+[5.584824] (dji_driver) StderrLine: {'line': b'  178 |     bool \x1b[01;35m\x1b[Kencoder_connected_\x1b[m\x1b[K;            ///< \xe7\xbc\x96\xe7\xa0\x81\xe5\x99\xa8\xe4\xb8\xb2\xe5\x8f\xa3\xe8\xbf\x9e\xe6\x8e\xa5\xe7\x8a\xb6\xe6\x80\x81\xe6\xa0\x87\xe5\xbf\x97\n'}
+[5.584970] (dji_driver) StderrLine: {'line': b'      |          \x1b[01;35m\x1b[K^~~~~~~~~~~~~~~~~~\x1b[m\x1b[K\n'}
+[5.585109] (dji_driver) StderrLine: {'line': b'\x1b[01m\x1b[K/home/nvidia/dji_ws2/DJI_ws/src/dji_driver/include/dji_driver/dji_driver_node.hpp:164:18:\x1b[m\x1b[K \x1b[01;35m\x1b[Kwarning: \x1b[m\x1b[K  \xe2\x80\x98\x1b[01m\x1b[Krclcpp::Time dji_driver::DJIDriverNode::last_tx_print_time_\x1b[m\x1b[K\xe2\x80\x99 [\x1b[01;35m\x1b[K\x1b]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wreorder\x07-Wreorder\x1b]8;;\x07\x1b[m\x1b[K]\n'}
+[5.585252] (dji_driver) StderrLine: {'line': b'  164 |     rclcpp::Time \x1b[01;35m\x1b[Klast_tx_print_time_\x1b[m\x1b[K;   ///< \xe4\xb8\x8a\xe6\xac\xa1\xe5\x8f\x91\xe9\x80\x81\xe6\x95\xb0\xe6\x8d\xae\xe6\x89\x93\xe5\x8d\xb0\xe6\x97\xb6\xe9\x97\xb4\n'}
+[5.585411] (dji_driver) StderrLine: {'line': b'      |                  \x1b[01;35m\x1b[K^~~~~~~~~~~~~~~~~~~\x1b[m\x1b[K\n'}
+[5.585549] (dji_driver) StderrLine: {'line': b'\x1b[01m\x1b[K/home/nvidia/dji_ws2/DJI_ws/src/dji_driver/src/dji_driver_node.cpp:18:1:\x1b[m\x1b[K \x1b[01;35m\x1b[Kwarning: \x1b[m\x1b[K  when initialized here [\x1b[01;35m\x1b[K\x1b]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wreorder\x07-Wreorder\x1b]8;;\x07\x1b[m\x1b[K]\n'}
+[5.585683] (dji_driver) StderrLine: {'line': b'   18 | \x1b[01;35m\x1b[KDJIDriverNode\x1b[m\x1b[K::DJIDriverNode()\n'}
+[5.585810] (dji_driver) StderrLine: {'line': b'      | \x1b[01;35m\x1b[K^~~~~~~~~~~~~\x1b[m\x1b[K\n'}
+[5.630353] (-) TimerEvent: {}
+[5.730942] (-) TimerEvent: {}
+[5.831538] (-) TimerEvent: {}
+[5.932137] (-) TimerEvent: {}
+[6.032736] (-) TimerEvent: {}
+[6.133304] (-) TimerEvent: {}
+[6.233866] (-) TimerEvent: {}
+[6.334452] (-) TimerEvent: {}
+[6.435051] (-) TimerEvent: {}
+[6.535667] (-) TimerEvent: {}
+[6.636256] (-) TimerEvent: {}
+[6.736845] (-) TimerEvent: {}
+[6.837437] (-) TimerEvent: {}
+[6.938040] (-) TimerEvent: {}
+[7.038623] (-) TimerEvent: {}
+[7.139189] (-) TimerEvent: {}
+[7.239783] (-) TimerEvent: {}
+[7.340371] (-) TimerEvent: {}
+[7.440954] (-) TimerEvent: {}
+[7.541557] (-) TimerEvent: {}
+[7.642149] (-) TimerEvent: {}
+[7.742740] (-) TimerEvent: {}
+[7.843340] (-) TimerEvent: {}
+[7.943956] (-) TimerEvent: {}
+[8.044544] (-) TimerEvent: {}
+[8.145124] (-) TimerEvent: {}
+[8.245698] (-) TimerEvent: {}
+[8.346298] (-) TimerEvent: {}
+[8.446876] (-) TimerEvent: {}
+[8.547474] (-) TimerEvent: {}
+[8.648080] (-) TimerEvent: {}
+[8.748656] (-) TimerEvent: {}
+[8.849231] (-) TimerEvent: {}
+[8.949824] (-) TimerEvent: {}
+[9.050402] (-) TimerEvent: {}
+[9.150989] (-) TimerEvent: {}
+[9.251601] (-) TimerEvent: {}
+[9.352190] (-) TimerEvent: {}
+[9.452755] (-) TimerEvent: {}
+[9.553341] (-) TimerEvent: {}
+[9.653938] (-) TimerEvent: {}
+[9.754536] (-) TimerEvent: {}
+[9.855346] (-) TimerEvent: {}
+[9.955962] (-) TimerEvent: {}
+[10.056560] (-) TimerEvent: {}
+[10.157133] (-) TimerEvent: {}
+[10.257713] (-) TimerEvent: {}
+[10.358307] (-) TimerEvent: {}
+[10.458894] (-) TimerEvent: {}
+[10.559487] (-) TimerEvent: {}
+[10.660077] (-) TimerEvent: {}
+[10.760671] (-) TimerEvent: {}
+[10.861258] (-) TimerEvent: {}
+[10.961842] (-) TimerEvent: {}
+[11.062426] (-) TimerEvent: {}
+[11.163022] (-) TimerEvent: {}
+[11.263622] (-) TimerEvent: {}
+[11.364205] (-) TimerEvent: {}
+[11.464783] (-) TimerEvent: {}
+[11.565370] (-) TimerEvent: {}
+[11.665973] (-) TimerEvent: {}
+[11.766570] (-) TimerEvent: {}
+[11.867172] (-) TimerEvent: {}
+[11.967695] (-) TimerEvent: {}
+[12.068255] (-) TimerEvent: {}
+[12.168813] (-) TimerEvent: {}
+[12.269378] (-) TimerEvent: {}
+[12.369944] (-) TimerEvent: {}
+[12.470503] (-) TimerEvent: {}
+[12.571063] (-) TimerEvent: {}
+[12.671655] (-) TimerEvent: {}
+[12.772210] (-) TimerEvent: {}
+[12.872777] (-) TimerEvent: {}
+[12.973351] (-) TimerEvent: {}
+[13.073921] (-) TimerEvent: {}
+[13.174491] (-) TimerEvent: {}
+[13.275049] (-) TimerEvent: {}
+[13.375623] (-) TimerEvent: {}
+[13.476178] (-) TimerEvent: {}
+[13.576737] (-) TimerEvent: {}
+[13.677312] (-) TimerEvent: {}
+[13.777894] (-) TimerEvent: {}
+[13.878713] (-) TimerEvent: {}
+[13.979278] (-) TimerEvent: {}
+[14.079864] (-) TimerEvent: {}
+[14.180408] (-) TimerEvent: {}
+[14.280960] (-) TimerEvent: {}
+[14.381517] (-) TimerEvent: {}
+[14.482072] (-) TimerEvent: {}
+[14.582638] (-) TimerEvent: {}
+[14.683206] (-) TimerEvent: {}
+[14.783810] (-) TimerEvent: {}
+[14.884797] (-) TimerEvent: {}
+[14.985349] (-) TimerEvent: {}
+[15.085907] (-) TimerEvent: {}
+[15.186463] (-) TimerEvent: {}
+[15.287018] (-) TimerEvent: {}
+[15.387676] (-) TimerEvent: {}
+[15.488231] (-) TimerEvent: {}
+[15.588797] (-) TimerEvent: {}
+[15.689349] (-) TimerEvent: {}
+[15.789905] (-) TimerEvent: {}
+[15.890468] (-) TimerEvent: {}
+[15.991028] (-) TimerEvent: {}
+[16.091615] (-) TimerEvent: {}
+[16.192273] (-) TimerEvent: {}
+[16.292831] (-) TimerEvent: {}
+[16.393394] (-) TimerEvent: {}
+[16.493963] (-) TimerEvent: {}
+[16.594523] (-) TimerEvent: {}
+[16.695108] (-) TimerEvent: {}
+[16.795696] (-) TimerEvent: {}
+[16.896264] (-) TimerEvent: {}
+[16.996834] (-) TimerEvent: {}
+[17.097399] (-) TimerEvent: {}
+[17.197961] (-) TimerEvent: {}
+[17.298527] (-) TimerEvent: {}
+[17.399088] (-) TimerEvent: {}
+[17.499660] (-) TimerEvent: {}
+[17.600221] (-) TimerEvent: {}
+[17.700786] (-) TimerEvent: {}
+[17.801397] (-) TimerEvent: {}
+[17.901965] (-) TimerEvent: {}
+[18.002526] (-) TimerEvent: {}
+[18.103101] (-) TimerEvent: {}
+[18.203682] (-) TimerEvent: {}
+[18.304251] (-) TimerEvent: {}
+[18.404837] (-) TimerEvent: {}
+[18.505409] (-) TimerEvent: {}
+[18.605979] (-) TimerEvent: {}
+[18.706543] (-) TimerEvent: {}
+[18.807122] (-) TimerEvent: {}
+[18.907696] (-) TimerEvent: {}
+[19.008283] (-) TimerEvent: {}
+[19.108867] (-) TimerEvent: {}
+[19.189996] (dji_driver) StdoutLine: {'line': b'[ 50%] \x1b[32m\x1b[1mLinking CXX executable dji_driver_node\x1b[0m\n'}
+[19.209014] (-) TimerEvent: {}
+[19.309859] (-) TimerEvent: {}
+[19.410711] (-) TimerEvent: {}
+[19.511362] (-) TimerEvent: {}
+[19.612040] (-) TimerEvent: {}
+[19.712619] (-) TimerEvent: {}
+[19.813198] (-) TimerEvent: {}
+[19.913770] (-) TimerEvent: {}
+[20.014365] (-) TimerEvent: {}
+[20.092358] (dji_driver) StdoutLine: {'line': b'[100%] Built target dji_driver_node\n'}
+[20.113166] (dji_driver) CommandEnded: {'returncode': 0}
+[20.114499] (-) TimerEvent: {}
+[20.115436] (dji_driver) JobProgress: {'identifier': 'dji_driver', 'progress': 'install'}
+[20.116793] (dji_driver) Command: {'cmd': ['/usr/bin/cmake', '--install', '/home/nvidia/dji_ws2/DJI_ws/build/dji_driver'], 'cwd': '/home/nvidia/dji_ws2/DJI_ws/build/dji_driver', 'env': OrderedDict([('LESSOPEN', '| /usr/bin/lesspipe %s'), ('LIBRARY_PATH', '/usr/local/cuda-12.6/lib64:/usr/local/cuda-12.6/lib64:'), ('USER', 'nvidia'), ('SSH_CLIENT', '10.90.0.102 61115 22'), ('LC_TIME', 'zh_CN.UTF-8'), ('XDG_SESSION_TYPE', 'tty'), ('GIT_ASKPASS', '/home/nvidia/.cursor-server/cli/servers/Stable-0781e811de386a0c5bcb07ceb259df8ff8246a50/server/extensions/git/dist/askpass.sh'), ('SHLVL', '1'), ('LD_LIBRARY_PATH', '/home/nvidia/dji_ws2/DJI_ws/install/serial/lib:/usr/local/cuda-12.6/lib64:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/aarch64-linux-gnu:/opt/ros/humble/lib:/usr/local/cuda-12.6/lib64:'), ('BROWSER', '/home/nvidia/.cursor-server/cli/servers/Stable-0781e811de386a0c5bcb07ceb259df8ff8246a50/server/bin/helpers/browser.sh'), ('MOTD_SHOWN', 'pam'), ('HOME', '/home/nvidia'), ('TERM_PROGRAM_VERSION', '0.49.6'), ('VSCODE_IPC_HOOK_CLI', '/run/user/1000/vscode-ipc-c0cddda3-b535-4fb3-b747-a9fd66e4f5d4.sock'), ('JETSON_L4T', '36.4.3'), ('ROS_PYTHON_VERSION', '3'), ('GNOME_SHELL_SESSION_MODE', 'ubuntu'), ('JETSON_MODEL', 'NVIDIA Jetson Orin NX Engineering Reference Developer Kit'), ('VSCODE_GIT_ASKPASS_MAIN', '/home/nvidia/.cursor-server/cli/servers/Stable-0781e811de386a0c5bcb07ceb259df8ff8246a50/server/extensions/git/dist/askpass-main.js'), ('LC_MONETARY', 'zh_CN.UTF-8'), ('VSCODE_GIT_ASKPASS_NODE', '/home/nvidia/.cursor-server/cli/servers/Stable-0781e811de386a0c5bcb07ceb259df8ff8246a50/server/node'), ('SSL_CERT_FILE', '/usr/lib/ssl/certs/ca-certificates.crt'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000/bus'), ('COLORTERM', 'truecolor'), ('COLCON_PREFIX_PATH', '/home/nvidia/dji_ws2/DJI_ws/install'), ('ROS_DISTRO', 'humble'), ('LOGNAME', 'nvidia'), ('JETSON_MODULE', ''), ('JETSON_SERIAL_NUMBER', '1424624348657'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('XDG_SESSION_CLASS', 'user'), ('TERM', 'xterm-256color'), ('XDG_SESSION_ID', '4'), ('ISAAC_ROS_WS', '/mnt/nova_ssd/workspaces/isaac_ros-dev/'), ('ROS_LOCALHOST_ONLY', '0'), ('PATH', '/usr/local/cuda-12.6/bin:/home/nvidia/.cursor-server/cli/servers/Stable-0781e811de386a0c5bcb07ceb259df8ff8246a50/server/bin/remote-cli:/home/nvidia/.local/bin:/opt/ros/humble/bin:/usr/local/cuda-12.6/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/home/nvidia/.cursor-server/data/User/globalStorage/github.copilot-chat/debugCommand'), ('PAPERSIZE', 'a4'), ('LC_ADDRESS', 'zh_CN.UTF-8'), ('XDG_RUNTIME_DIR', '/run/user/1000'), ('SSL_CERT_DIR', '/usr/lib/ssl/certs'), ('DISPLAY', ':0'), ('LANG', 'en_US.UTF-8'), ('XDG_CURRENT_DESKTOP', 'ubuntu:GNOME'), ('LC_TELEPHONE', 'zh_CN.UTF-8'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('JETSON_SOC', 'tegra234'), ('VSCODE_GIT_IPC_HANDLE', '/run/user/1000/vscode-git-dd3090e221.sock'), ('TERM_PROGRAM', 'vscode'), ('AMENT_PREFIX_PATH', '/home/nvidia/dji_ws2/DJI_ws/install/dji_driver:/home/nvidia/dji_ws2/DJI_ws/install/serial:/opt/ros/humble'), ('SHELL', '/bin/bash'), ('LC_NAME', 'zh_CN.UTF-8'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('LC_MEASUREMENT', 'zh_CN.UTF-8'), ('LC_IDENTIFICATION', 'zh_CN.UTF-8'), ('VSCODE_GIT_ASKPASS_EXTRA_ARGS', ''), ('JETSON_CUDA_ARCH_BIN', '8.7'), ('PWD', '/home/nvidia/dji_ws2/DJI_ws/build/dji_driver'), ('LC_ALL', 'en_US.UTF-8'), ('SSH_CONNECTION', '10.90.0.102 61115 10.90.0.109 22'), ('XDG_DATA_DIRS', '/usr/share/gnome:/usr/local/share:/usr/share:/var/lib/snapd/desktop'), ('PYTHONPATH', '/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages'), ('LC_NUMERIC', 'zh_CN.UTF-8'), ('LC_PAPER', 'zh_CN.UTF-8'), ('COLCON', '1'), ('JETSON_JETPACK', '6.2'), ('CMAKE_PREFIX_PATH', '/home/nvidia/dji_ws2/DJI_ws/install/serial:/home/nvidia/dji_ws2/DJI_ws/install/dji_driver:/opt/ros/humble')]), 'shell': False}
+[20.133274] (dji_driver) StdoutLine: {'line': b'-- Install configuration: ""\n'}
+[20.133892] (dji_driver) StdoutLine: {'line': b'-- Installing: /home/nvidia/dji_ws2/DJI_ws/install/dji_driver/lib/dji_driver/dji_driver_node\n'}
+[20.143536] (dji_driver) StdoutLine: {'line': b'-- Set runtime path of "/home/nvidia/dji_ws2/DJI_ws/install/dji_driver/lib/dji_driver/dji_driver_node" to ""\n'}
+[20.143985] (dji_driver) StdoutLine: {'line': b'-- Up-to-date: /home/nvidia/dji_ws2/DJI_ws/install/dji_driver/share/dji_driver/config\n'}
+[20.144245] (dji_driver) StdoutLine: {'line': b'-- Up-to-date: /home/nvidia/dji_ws2/DJI_ws/install/dji_driver/share/dji_driver/config/dji_driver_params.yaml\n'}
+[20.144486] (dji_driver) StdoutLine: {'line': b'-- Up-to-date: /home/nvidia/dji_ws2/DJI_ws/install/dji_driver/share/dji_driver/launch\n'}
+[20.144693] (dji_driver) StdoutLine: {'line': b'-- Up-to-date: /home/nvidia/dji_ws2/DJI_ws/install/dji_driver/share/dji_driver/launch/dji_driver.launch.py\n'}
+[20.144892] (dji_driver) StdoutLine: {'line': b'-- Up-to-date: /home/nvidia/dji_ws2/DJI_ws/install/dji_driver/share/ament_index/resource_index/package_run_dependencies/dji_driver\n'}
+[20.145045] (dji_driver) StdoutLine: {'line': b'-- Up-to-date: /home/nvidia/dji_ws2/DJI_ws/install/dji_driver/share/ament_index/resource_index/parent_prefix_path/dji_driver\n'}
+[20.145212] (dji_driver) StdoutLine: {'line': b'-- Up-to-date: /home/nvidia/dji_ws2/DJI_ws/install/dji_driver/share/dji_driver/environment/ament_prefix_path.sh\n'}
+[20.145434] (dji_driver) StdoutLine: {'line': b'-- Up-to-date: /home/nvidia/dji_ws2/DJI_ws/install/dji_driver/share/dji_driver/environment/ament_prefix_path.dsv\n'}
+[20.145609] (dji_driver) StdoutLine: {'line': b'-- Up-to-date: /home/nvidia/dji_ws2/DJI_ws/install/dji_driver/share/dji_driver/environment/path.sh\n'}
+[20.145768] (dji_driver) StdoutLine: {'line': b'-- Up-to-date: /home/nvidia/dji_ws2/DJI_ws/install/dji_driver/share/dji_driver/environment/path.dsv\n'}
+[20.145911] (dji_driver) StdoutLine: {'line': b'-- Up-to-date: /home/nvidia/dji_ws2/DJI_ws/install/dji_driver/share/dji_driver/local_setup.bash\n'}
+[20.146045] (dji_driver) StdoutLine: {'line': b'-- Up-to-date: /home/nvidia/dji_ws2/DJI_ws/install/dji_driver/share/dji_driver/local_setup.sh\n'}
+[20.146178] (dji_driver) StdoutLine: {'line': b'-- Up-to-date: /home/nvidia/dji_ws2/DJI_ws/install/dji_driver/share/dji_driver/local_setup.zsh\n'}
+[20.146307] (dji_driver) StdoutLine: {'line': b'-- Up-to-date: /home/nvidia/dji_ws2/DJI_ws/install/dji_driver/share/dji_driver/local_setup.dsv\n'}
+[20.146434] (dji_driver) StdoutLine: {'line': b'-- Installing: /home/nvidia/dji_ws2/DJI_ws/install/dji_driver/share/dji_driver/package.dsv\n'}
+[20.146564] (dji_driver) StdoutLine: {'line': b'-- Up-to-date: /home/nvidia/dji_ws2/DJI_ws/install/dji_driver/share/ament_index/resource_index/packages/dji_driver\n'}
+[20.146696] (dji_driver) StdoutLine: {'line': b'-- Up-to-date: /home/nvidia/dji_ws2/DJI_ws/install/dji_driver/share/dji_driver/cmake/dji_driverConfig.cmake\n'}
+[20.146825] (dji_driver) StdoutLine: {'line': b'-- Up-to-date: /home/nvidia/dji_ws2/DJI_ws/install/dji_driver/share/dji_driver/cmake/dji_driverConfig-version.cmake\n'}
+[20.146953] (dji_driver) StdoutLine: {'line': b'-- Up-to-date: /home/nvidia/dji_ws2/DJI_ws/install/dji_driver/share/dji_driver/package.xml\n'}
+[20.148892] (dji_driver) CommandEnded: {'returncode': 0}
+[20.192764] (dji_driver) JobEnded: {'identifier': 'dji_driver', 'rc': 0}
+[20.195688] (-) EventReactorShutdown: {}

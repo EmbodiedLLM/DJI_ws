@@ -1,0 +1,33 @@
+# ROS workspace files
+build/
+install/
+log/
+
+# CMake files
+CMakeCache.txt
+CMakeFiles/
+cmake_install.cmake
+CTestTestfile.cmake
+compile_commands.json
+
+# Python files
+*.pyc
+__pycache__/
+
+# Backup files
+*~
+*.swp
+*.swo
+
+# IDE files
+.vscode/
+.cproject
+.project
+.settings/
+
+# Other
+*.orig
+*.rej 
+
+# Ignore specific source directories
+src/serial-ros2/ 

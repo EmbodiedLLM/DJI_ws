@@ -53,10 +53,10 @@ RM = /usr/bin/cmake -E rm -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/yinzi/DJI_ws/dji_driver
+CMAKE_SOURCE_DIR = /home/nvidia/dji_ws2/DJI_ws/src/dji_driver
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/yinzi/DJI_ws/build/dji_driver
+CMAKE_BINARY_DIR = /home/nvidia/dji_ws2/DJI_ws/build/dji_driver
 
 # Include any dependencies generated for this target.
 include CMakeFiles/dji_driver_node.dir/depend.make
@@ -70,46 +70,46 @@ include CMakeFiles/dji_driver_node.dir/progress.make
 include CMakeFiles/dji_driver_node.dir/flags.make
 
 CMakeFiles/dji_driver_node.dir/src/dji_driver_node.cpp.o: CMakeFiles/dji_driver_node.dir/flags.make
-CMakeFiles/dji_driver_node.dir/src/dji_driver_node.cpp.o: /home/yinzi/DJI_ws/dji_driver/src/dji_driver_node.cpp
+CMakeFiles/dji_driver_node.dir/src/dji_driver_node.cpp.o: /home/nvidia/dji_ws2/DJI_ws/src/dji_driver/src/dji_driver_node.cpp
 CMakeFiles/dji_driver_node.dir/src/dji_driver_node.cpp.o: CMakeFiles/dji_driver_node.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/yinzi/DJI_ws/build/dji_driver/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object CMakeFiles/dji_driver_node.dir/src/dji_driver_node.cpp.o"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/dji_driver_node.dir/src/dji_driver_node.cpp.o -MF CMakeFiles/dji_driver_node.dir/src/dji_driver_node.cpp.o.d -o CMakeFiles/dji_driver_node.dir/src/dji_driver_node.cpp.o -c /home/yinzi/DJI_ws/dji_driver/src/dji_driver_node.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/nvidia/dji_ws2/DJI_ws/build/dji_driver/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object CMakeFiles/dji_driver_node.dir/src/dji_driver_node.cpp.o"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/dji_driver_node.dir/src/dji_driver_node.cpp.o -MF CMakeFiles/dji_driver_node.dir/src/dji_driver_node.cpp.o.d -o CMakeFiles/dji_driver_node.dir/src/dji_driver_node.cpp.o -c /home/nvidia/dji_ws2/DJI_ws/src/dji_driver/src/dji_driver_node.cpp
 
 CMakeFiles/dji_driver_node.dir/src/dji_driver_node.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/dji_driver_node.dir/src/dji_driver_node.cpp.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/yinzi/DJI_ws/dji_driver/src/dji_driver_node.cpp > CMakeFiles/dji_driver_node.dir/src/dji_driver_node.cpp.i
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/nvidia/dji_ws2/DJI_ws/src/dji_driver/src/dji_driver_node.cpp > CMakeFiles/dji_driver_node.dir/src/dji_driver_node.cpp.i
 
 CMakeFiles/dji_driver_node.dir/src/dji_driver_node.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/dji_driver_node.dir/src/dji_driver_node.cpp.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/yinzi/DJI_ws/dji_driver/src/dji_driver_node.cpp -o CMakeFiles/dji_driver_node.dir/src/dji_driver_node.cpp.s
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/nvidia/dji_ws2/DJI_ws/src/dji_driver/src/dji_driver_node.cpp -o CMakeFiles/dji_driver_node.dir/src/dji_driver_node.cpp.s
 
 CMakeFiles/dji_driver_node.dir/src/dji_protocol.cpp.o: CMakeFiles/dji_driver_node.dir/flags.make
-CMakeFiles/dji_driver_node.dir/src/dji_protocol.cpp.o: /home/yinzi/DJI_ws/dji_driver/src/dji_protocol.cpp
+CMakeFiles/dji_driver_node.dir/src/dji_protocol.cpp.o: /home/nvidia/dji_ws2/DJI_ws/src/dji_driver/src/dji_protocol.cpp
 CMakeFiles/dji_driver_node.dir/src/dji_protocol.cpp.o: CMakeFiles/dji_driver_node.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/yinzi/DJI_ws/build/dji_driver/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object CMakeFiles/dji_driver_node.dir/src/dji_protocol.cpp.o"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/dji_driver_node.dir/src/dji_protocol.cpp.o -MF CMakeFiles/dji_driver_node.dir/src/dji_protocol.cpp.o.d -o CMakeFiles/dji_driver_node.dir/src/dji_protocol.cpp.o -c /home/yinzi/DJI_ws/dji_driver/src/dji_protocol.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/nvidia/dji_ws2/DJI_ws/build/dji_driver/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object CMakeFiles/dji_driver_node.dir/src/dji_protocol.cpp.o"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/dji_driver_node.dir/src/dji_protocol.cpp.o -MF CMakeFiles/dji_driver_node.dir/src/dji_protocol.cpp.o.d -o CMakeFiles/dji_driver_node.dir/src/dji_protocol.cpp.o -c /home/nvidia/dji_ws2/DJI_ws/src/dji_driver/src/dji_protocol.cpp
 
 CMakeFiles/dji_driver_node.dir/src/dji_protocol.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/dji_driver_node.dir/src/dji_protocol.cpp.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/yinzi/DJI_ws/dji_driver/src/dji_protocol.cpp > CMakeFiles/dji_driver_node.dir/src/dji_protocol.cpp.i
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/nvidia/dji_ws2/DJI_ws/src/dji_driver/src/dji_protocol.cpp > CMakeFiles/dji_driver_node.dir/src/dji_protocol.cpp.i
 
 CMakeFiles/dji_driver_node.dir/src/dji_protocol.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/dji_driver_node.dir/src/dji_protocol.cpp.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/yinzi/DJI_ws/dji_driver/src/dji_protocol.cpp -o CMakeFiles/dji_driver_node.dir/src/dji_protocol.cpp.s
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/nvidia/dji_ws2/DJI_ws/src/dji_driver/src/dji_protocol.cpp -o CMakeFiles/dji_driver_node.dir/src/dji_protocol.cpp.s
 
 CMakeFiles/dji_driver_node.dir/src/CRC8_CRC16.c.o: CMakeFiles/dji_driver_node.dir/flags.make
-CMakeFiles/dji_driver_node.dir/src/CRC8_CRC16.c.o: /home/yinzi/DJI_ws/dji_driver/src/CRC8_CRC16.c
+CMakeFiles/dji_driver_node.dir/src/CRC8_CRC16.c.o: /home/nvidia/dji_ws2/DJI_ws/src/dji_driver/src/CRC8_CRC16.c
 CMakeFiles/dji_driver_node.dir/src/CRC8_CRC16.c.o: CMakeFiles/dji_driver_node.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/yinzi/DJI_ws/build/dji_driver/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building C object CMakeFiles/dji_driver_node.dir/src/CRC8_CRC16.c.o"
-	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/dji_driver_node.dir/src/CRC8_CRC16.c.o -MF CMakeFiles/dji_driver_node.dir/src/CRC8_CRC16.c.o.d -o CMakeFiles/dji_driver_node.dir/src/CRC8_CRC16.c.o -c /home/yinzi/DJI_ws/dji_driver/src/CRC8_CRC16.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/nvidia/dji_ws2/DJI_ws/build/dji_driver/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building C object CMakeFiles/dji_driver_node.dir/src/CRC8_CRC16.c.o"
+	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/dji_driver_node.dir/src/CRC8_CRC16.c.o -MF CMakeFiles/dji_driver_node.dir/src/CRC8_CRC16.c.o.d -o CMakeFiles/dji_driver_node.dir/src/CRC8_CRC16.c.o -c /home/nvidia/dji_ws2/DJI_ws/src/dji_driver/src/CRC8_CRC16.c
 
 CMakeFiles/dji_driver_node.dir/src/CRC8_CRC16.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/dji_driver_node.dir/src/CRC8_CRC16.c.i"
-	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/yinzi/DJI_ws/dji_driver/src/CRC8_CRC16.c > CMakeFiles/dji_driver_node.dir/src/CRC8_CRC16.c.i
+	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/nvidia/dji_ws2/DJI_ws/src/dji_driver/src/CRC8_CRC16.c > CMakeFiles/dji_driver_node.dir/src/CRC8_CRC16.c.i
 
 CMakeFiles/dji_driver_node.dir/src/CRC8_CRC16.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/dji_driver_node.dir/src/CRC8_CRC16.c.s"
-	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/yinzi/DJI_ws/dji_driver/src/CRC8_CRC16.c -o CMakeFiles/dji_driver_node.dir/src/CRC8_CRC16.c.s
+	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/nvidia/dji_ws2/DJI_ws/src/dji_driver/src/CRC8_CRC16.c -o CMakeFiles/dji_driver_node.dir/src/CRC8_CRC16.c.s
 
 # Object files for target dji_driver_node
 dji_driver_node_OBJECTS = \
@@ -131,7 +131,7 @@ dji_driver_node: /opt/ros/humble/lib/libnav_msgs__rosidl_typesupport_introspecti
 dji_driver_node: /opt/ros/humble/lib/libnav_msgs__rosidl_typesupport_cpp.so
 dji_driver_node: /opt/ros/humble/lib/libnav_msgs__rosidl_generator_py.so
 dji_driver_node: /opt/ros/humble/lib/libstatic_transform_broadcaster_node.so
-dji_driver_node: /usr/local/lib/libserial.so
+dji_driver_node: /home/nvidia/dji_ws2/DJI_ws/install/serial/lib/libserial.a
 dji_driver_node: /opt/ros/humble/lib/libnav_msgs__rosidl_typesupport_c.so
 dji_driver_node: /opt/ros/humble/lib/libnav_msgs__rosidl_generator_c.so
 dji_driver_node: /opt/ros/humble/lib/libtf2_ros.so
@@ -226,16 +226,16 @@ dji_driver_node: /opt/ros/humble/lib/libbuiltin_interfaces__rosidl_typesupport_c
 dji_driver_node: /opt/ros/humble/lib/libaction_msgs__rosidl_generator_c.so
 dji_driver_node: /opt/ros/humble/lib/libbuiltin_interfaces__rosidl_generator_c.so
 dji_driver_node: /opt/ros/humble/lib/libunique_identifier_msgs__rosidl_generator_py.so
-dji_driver_node: /usr/lib/x86_64-linux-gnu/libpython3.10.so
+dji_driver_node: /usr/lib/aarch64-linux-gnu/libpython3.10.so
 dji_driver_node: /opt/ros/humble/lib/libunique_identifier_msgs__rosidl_typesupport_c.so
 dji_driver_node: /opt/ros/humble/lib/librosidl_typesupport_c.so
 dji_driver_node: /opt/ros/humble/lib/librcpputils.so
 dji_driver_node: /opt/ros/humble/lib/libunique_identifier_msgs__rosidl_generator_c.so
 dji_driver_node: /opt/ros/humble/lib/librosidl_runtime_c.so
 dji_driver_node: /opt/ros/humble/lib/librcutils.so
-dji_driver_node: /usr/lib/x86_64-linux-gnu/liborocos-kdl.so
+dji_driver_node: /usr/lib/aarch64-linux-gnu/liborocos-kdl.so
 dji_driver_node: CMakeFiles/dji_driver_node.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/yinzi/DJI_ws/build/dji_driver/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Linking CXX executable dji_driver_node"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/nvidia/dji_ws2/DJI_ws/build/dji_driver/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Linking CXX executable dji_driver_node"
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/dji_driver_node.dir/link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.
@@ -247,6 +247,6 @@ CMakeFiles/dji_driver_node.dir/clean:
 .PHONY : CMakeFiles/dji_driver_node.dir/clean
 
 CMakeFiles/dji_driver_node.dir/depend:
-	cd /home/yinzi/DJI_ws/build/dji_driver && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/yinzi/DJI_ws/dji_driver /home/yinzi/DJI_ws/dji_driver /home/yinzi/DJI_ws/build/dji_driver /home/yinzi/DJI_ws/build/dji_driver /home/yinzi/DJI_ws/build/dji_driver/CMakeFiles/dji_driver_node.dir/DependInfo.cmake --color=$(COLOR)
+	cd /home/nvidia/dji_ws2/DJI_ws/build/dji_driver && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/nvidia/dji_ws2/DJI_ws/src/dji_driver /home/nvidia/dji_ws2/DJI_ws/src/dji_driver /home/nvidia/dji_ws2/DJI_ws/build/dji_driver /home/nvidia/dji_ws2/DJI_ws/build/dji_driver /home/nvidia/dji_ws2/DJI_ws/build/dji_driver/CMakeFiles/dji_driver_node.dir/DependInfo.cmake --color=$(COLOR)
 .PHONY : CMakeFiles/dji_driver_node.dir/depend
 

@@ -53,10 +53,10 @@ RM = /usr/bin/cmake -E rm -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/yinzi/DJI_ws/dji_driver
+CMAKE_SOURCE_DIR = /home/nvidia/dji_ws2/DJI_ws/src/dji_driver
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/yinzi/DJI_ws/build/dji_driver
+CMAKE_BINARY_DIR = /home/nvidia/dji_ws2/DJI_ws/build/dji_driver
 
 # Utility rule file for uninstall.
 
@@ -78,6 +78,6 @@ CMakeFiles/uninstall.dir/clean:
 .PHONY : CMakeFiles/uninstall.dir/clean
 
 CMakeFiles/uninstall.dir/depend:
-	cd /home/yinzi/DJI_ws/build/dji_driver && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/yinzi/DJI_ws/dji_driver /home/yinzi/DJI_ws/dji_driver /home/yinzi/DJI_ws/build/dji_driver /home/yinzi/DJI_ws/build/dji_driver /home/yinzi/DJI_ws/build/dji_driver/CMakeFiles/uninstall.dir/DependInfo.cmake --color=$(COLOR)
+	cd /home/nvidia/dji_ws2/DJI_ws/build/dji_driver && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/nvidia/dji_ws2/DJI_ws/src/dji_driver /home/nvidia/dji_ws2/DJI_ws/src/dji_driver /home/nvidia/dji_ws2/DJI_ws/build/dji_driver /home/nvidia/dji_ws2/DJI_ws/build/dji_driver /home/nvidia/dji_ws2/DJI_ws/build/dji_driver/CMakeFiles/uninstall.dir/DependInfo.cmake --color=$(COLOR)
 .PHONY : CMakeFiles/uninstall.dir/depend
 

@@ -1,0 +1,40 @@
+[0.020s] Invoking command in '/home/nvidia/dji_ws2/DJI_ws/build/dji_driver': CMAKE_PREFIX_PATH=/home/nvidia/dji_ws2/DJI_ws/install/serial:/home/nvidia/dji_ws2/DJI_ws/install/dji_driver:/opt/ros/humble /usr/bin/cmake --build /home/nvidia/dji_ws2/DJI_ws/build/dji_driver -- -j4 -l4
+[0.124s] [ 25%] [32mBuilding CXX object CMakeFiles/dji_driver_node.dir/src/dji_driver_node.cpp.o[0m
+[5.410s] In file included from [01m[K/home/nvidia/dji_ws2/DJI_ws/src/dji_driver/src/dji_driver_node.cpp:1[m[K:
+[5.410s] [01m[K/home/nvidia/dji_ws2/DJI_ws/src/dji_driver/include/dji_driver/dji_driver_node.hpp:[m[K In constructor ‘[01m[Kdji_driver::DJIDriverNode::DJIDriverNode()[m[K’:
+[5.410s] [01m[K/home/nvidia/dji_ws2/DJI_ws/src/dji_driver/include/dji_driver/dji_driver_node.hpp:178:10:[m[K [01;35m[Kwarning: [m[K‘[01m[Kdji_driver::DJIDriverNode::encoder_connected_[m[K’ will be initialized after [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wreorder-Wreorder]8;;[m[K]
+[5.411s]   178 |     bool [01;35m[Kencoder_connected_[m[K;            ///< 编码器串口连接状态标志
+[5.411s]       |          [01;35m[K^~~~~~~~~~~~~~~~~~[m[K
+[5.411s] [01m[K/home/nvidia/dji_ws2/DJI_ws/src/dji_driver/include/dji_driver/dji_driver_node.hpp:164:18:[m[K [01;35m[Kwarning: [m[K  ‘[01m[Krclcpp::Time dji_driver::DJIDriverNode::last_tx_print_time_[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wreorder-Wreorder]8;;[m[K]
+[5.411s]   164 |     rclcpp::Time [01;35m[Klast_tx_print_time_[m[K;   ///< 上次发送数据打印时间
+[5.411s]       |                  [01;35m[K^~~~~~~~~~~~~~~~~~~[m[K
+[5.411s] [01m[K/home/nvidia/dji_ws2/DJI_ws/src/dji_driver/src/dji_driver_node.cpp:18:1:[m[K [01;35m[Kwarning: [m[K  when initialized here [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wreorder-Wreorder]8;;[m[K]
+[5.411s]    18 | [01;35m[KDJIDriverNode[m[K::DJIDriverNode()
+[5.412s]       | [01;35m[K^~~~~~~~~~~~~[m[K
+[19.281s] [ 50%] [32m[1mLinking CXX executable dji_driver_node[0m
+[20.189s] [100%] Built target dji_driver_node
+[20.210s] Invoked command in '/home/nvidia/dji_ws2/DJI_ws/build/dji_driver' returned '0': CMAKE_PREFIX_PATH=/home/nvidia/dji_ws2/DJI_ws/install/serial:/home/nvidia/dji_ws2/DJI_ws/install/dji_driver:/opt/ros/humble /usr/bin/cmake --build /home/nvidia/dji_ws2/DJI_ws/build/dji_driver -- -j4 -l4
+[20.215s] Invoking command in '/home/nvidia/dji_ws2/DJI_ws/build/dji_driver': CMAKE_PREFIX_PATH=/home/nvidia/dji_ws2/DJI_ws/install/serial:/home/nvidia/dji_ws2/DJI_ws/install/dji_driver:/opt/ros/humble /usr/bin/cmake --install /home/nvidia/dji_ws2/DJI_ws/build/dji_driver
+[20.229s] -- Install configuration: ""
+[20.229s] -- Installing: /home/nvidia/dji_ws2/DJI_ws/install/dji_driver/lib/dji_driver/dji_driver_node
+[20.239s] -- Set runtime path of "/home/nvidia/dji_ws2/DJI_ws/install/dji_driver/lib/dji_driver/dji_driver_node" to ""
+[20.239s] -- Up-to-date: /home/nvidia/dji_ws2/DJI_ws/install/dji_driver/share/dji_driver/config
+[20.239s] -- Up-to-date: /home/nvidia/dji_ws2/DJI_ws/install/dji_driver/share/dji_driver/config/dji_driver_params.yaml
+[20.239s] -- Up-to-date: /home/nvidia/dji_ws2/DJI_ws/install/dji_driver/share/dji_driver/launch
+[20.240s] -- Up-to-date: /home/nvidia/dji_ws2/DJI_ws/install/dji_driver/share/dji_driver/launch/dji_driver.launch.py
+[20.240s] -- Up-to-date: /home/nvidia/dji_ws2/DJI_ws/install/dji_driver/share/ament_index/resource_index/package_run_dependencies/dji_driver
+[20.240s] -- Up-to-date: /home/nvidia/dji_ws2/DJI_ws/install/dji_driver/share/ament_index/resource_index/parent_prefix_path/dji_driver
+[20.240s] -- Up-to-date: /home/nvidia/dji_ws2/DJI_ws/install/dji_driver/share/dji_driver/environment/ament_prefix_path.sh
+[20.240s] -- Up-to-date: /home/nvidia/dji_ws2/DJI_ws/install/dji_driver/share/dji_driver/environment/ament_prefix_path.dsv
+[20.240s] -- Up-to-date: /home/nvidia/dji_ws2/DJI_ws/install/dji_driver/share/dji_driver/environment/path.sh
+[20.241s] -- Up-to-date: /home/nvidia/dji_ws2/DJI_ws/install/dji_driver/share/dji_driver/environment/path.dsv
+[20.241s] -- Up-to-date: /home/nvidia/dji_ws2/DJI_ws/install/dji_driver/share/dji_driver/local_setup.bash
+[20.241s] -- Up-to-date: /home/nvidia/dji_ws2/DJI_ws/install/dji_driver/share/dji_driver/local_setup.sh
+[20.241s] -- Up-to-date: /home/nvidia/dji_ws2/DJI_ws/install/dji_driver/share/dji_driver/local_setup.zsh
+[20.241s] -- Up-to-date: /home/nvidia/dji_ws2/DJI_ws/install/dji_driver/share/dji_driver/local_setup.dsv
+[20.241s] -- Installing: /home/nvidia/dji_ws2/DJI_ws/install/dji_driver/share/dji_driver/package.dsv
+[20.241s] -- Up-to-date: /home/nvidia/dji_ws2/DJI_ws/install/dji_driver/share/ament_index/resource_index/packages/dji_driver
+[20.241s] -- Up-to-date: /home/nvidia/dji_ws2/DJI_ws/install/dji_driver/share/dji_driver/cmake/dji_driverConfig.cmake
+[20.242s] -- Up-to-date: /home/nvidia/dji_ws2/DJI_ws/install/dji_driver/share/dji_driver/cmake/dji_driverConfig-version.cmake
+[20.242s] -- Up-to-date: /home/nvidia/dji_ws2/DJI_ws/install/dji_driver/share/dji_driver/package.xml
+[20.245s] Invoked command in '/home/nvidia/dji_ws2/DJI_ws/build/dji_driver' returned '0': CMAKE_PREFIX_PATH=/home/nvidia/dji_ws2/DJI_ws/install/serial:/home/nvidia/dji_ws2/DJI_ws/install/dji_driver:/opt/ros/humble /usr/bin/cmake --install /home/nvidia/dji_ws2/DJI_ws/build/dji_driver

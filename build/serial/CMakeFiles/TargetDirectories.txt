@@ -1,0 +1,10 @@
+/home/nvidia/dji_ws2/DJI_ws/build/serial/CMakeFiles/uninstall.dir
+/home/nvidia/dji_ws2/DJI_ws/build/serial/CMakeFiles/serial_uninstall.dir
+/home/nvidia/dji_ws2/DJI_ws/build/serial/CMakeFiles/serial.dir
+/home/nvidia/dji_ws2/DJI_ws/build/serial/CMakeFiles/test.dir
+/home/nvidia/dji_ws2/DJI_ws/build/serial/CMakeFiles/edit_cache.dir
+/home/nvidia/dji_ws2/DJI_ws/build/serial/CMakeFiles/rebuild_cache.dir
+/home/nvidia/dji_ws2/DJI_ws/build/serial/CMakeFiles/list_install_components.dir
+/home/nvidia/dji_ws2/DJI_ws/build/serial/CMakeFiles/install.dir
+/home/nvidia/dji_ws2/DJI_ws/build/serial/CMakeFiles/install/local.dir
+/home/nvidia/dji_ws2/DJI_ws/build/serial/CMakeFiles/install/strip.dir

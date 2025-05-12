@@ -57,10 +57,10 @@ RM = /usr/bin/cmake -E rm -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/yinzi/DJI_ws/dji_driver
+CMAKE_SOURCE_DIR = /home/nvidia/dji_ws2/DJI_ws/src/dji_driver
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/yinzi/DJI_ws/build/dji_driver
+CMAKE_BINARY_DIR = /home/nvidia/dji_ws2/DJI_ws/build/dji_driver
 
 #=============================================================================
 # Targets provided globally by CMake.
@@ -142,9 +142,9 @@ install/strip/fast: preinstall/fast
 
 # The main all target
 all: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/yinzi/DJI_ws/build/dji_driver/CMakeFiles /home/yinzi/DJI_ws/build/dji_driver//CMakeFiles/progress.marks
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/nvidia/dji_ws2/DJI_ws/build/dji_driver/CMakeFiles /home/nvidia/dji_ws2/DJI_ws/build/dji_driver//CMakeFiles/progress.marks
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/yinzi/DJI_ws/build/dji_driver/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/nvidia/dji_ws2/DJI_ws/build/dji_driver/CMakeFiles 0
 .PHONY : all
 
 # The main clean target
