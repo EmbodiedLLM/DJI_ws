@@ -7,8 +7,8 @@
       timeout: 0.1          # 超时时间(秒)
       
     encoder_serial:      # 编码器数据串口
-      port: "/dev/ttyACM2"  # 串口设备名，更新为检测到的设备
-      baud_rate: 115200     # 波特率，更新为需要的波特率
+      port: "/dev/ttyACM0"  # 串口设备名，更新为检测到的设备
+      baud_rate: 9600       # 波特率，设置为设备检测到的9600
       timeout: 0.1          # 超时时间(秒)
 
     # 速度参数配置
@@ -41,9 +41,6 @@
       frame_id: "odom"        # 里程计坐标系
       child_frame_id: "base_link"  # 机器人坐标系
       publish_tf: true        # 是否发布TF变换
-
-    # 协议配置
-    use_new_protocol: true    # 是否使用新协议解析编码器数据
 
     # 调试模式
     debug: true               # 调试模式开关，启用以查看更多信息

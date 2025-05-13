@@ -1,7 +1,7 @@
 CMakeFiles/dji_driver_node.dir/src/dji_protocol.cpp.o: \
- /home/nvidia/dji_ws2/DJI_ws/src/dji_driver/src/dji_protocol.cpp \
+ /home/nvidia/DJI_ws/src/dji_driver/src/dji_protocol.cpp \
  /usr/include/stdc-predef.h \
- /home/nvidia/dji_ws2/DJI_ws/src/dji_driver/include/dji_driver/dji_protocol.hpp \
+ /home/nvidia/DJI_ws/src/dji_driver/include/dji_driver/dji_protocol.hpp \
  /usr/include/c++/11/cstdint \
  /usr/include/aarch64-linux-gnu/c++/11/bits/c++config.h \
  /usr/include/aarch64-linux-gnu/c++/11/bits/os_defines.h \
@@ -22,6 +22,6 @@ CMakeFiles/dji_driver_node.dir/src/dji_protocol.cpp.o: \
  /usr/include/aarch64-linux-gnu/bits/wchar.h \
  /usr/include/aarch64-linux-gnu/bits/stdint-intn.h \
  /usr/include/aarch64-linux-gnu/bits/stdint-uintn.h \
- /home/nvidia/dji_ws2/DJI_ws/src/dji_driver/include/dji_driver/CRC8_CRC16.h \
+ /home/nvidia/DJI_ws/src/dji_driver/include/dji_driver/CRC8_CRC16.h \
  /usr/include/c++/11/cstddef \
  /usr/lib/gcc/aarch64-linux-gnu/11/include/stddef.h

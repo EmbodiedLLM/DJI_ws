@@ -1,1 +1,1 @@
-/home/nvidia/dji_ws2/DJI_ws/install/serial:/opt/ros/humble
+/home/nvidia/DJI_ws/install/encoder_receiver:/home/nvidia/DJI_ws/install/dji_driver:/home/nvidia/DJI_ws/install/serial:/opt/ros/humble

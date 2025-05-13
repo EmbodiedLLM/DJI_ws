@@ -1,7 +1,7 @@
 CMakeFiles/dji_driver_node.dir/src/dji_driver_node.cpp.o: \
- /home/nvidia/dji_ws2/DJI_ws/src/dji_driver/src/dji_driver_node.cpp \
+ /home/nvidia/DJI_ws/src/dji_driver/src/dji_driver_node.cpp \
  /usr/include/stdc-predef.h \
- /home/nvidia/dji_ws2/DJI_ws/src/dji_driver/include/dji_driver/dji_driver_node.hpp \
+ /home/nvidia/DJI_ws/src/dji_driver/include/dji_driver/dji_driver_node.hpp \
  /opt/ros/humble/include/rclcpp/rclcpp/rclcpp.hpp \
  /usr/include/c++/11/csignal \
  /usr/include/aarch64-linux-gnu/c++/11/bits/c++config.h \
@@ -644,8 +644,8 @@ CMakeFiles/dji_driver_node.dir/src/dji_driver_node.cpp.o: \
  /opt/ros/humble/include/geometry_msgs/geometry_msgs/msg/detail/vector3__traits.hpp \
  /opt/ros/humble/include/geometry_msgs/geometry_msgs/msg/detail/twist__type_support.hpp \
  /opt/ros/humble/include/geometry_msgs/geometry_msgs/msg/rosidl_generator_cpp__visibility_control.hpp \
- /home/nvidia/dji_ws2/DJI_ws/install/serial/include/serial/serial.h \
- /home/nvidia/dji_ws2/DJI_ws/install/serial/include/serial/v8stdint.h \
+ /home/nvidia/DJI_ws/install/serial/include/serial/serial.h \
+ /home/nvidia/DJI_ws/install/serial/include/serial/v8stdint.h \
  /opt/ros/humble/include/nav_msgs/nav_msgs/msg/odometry.hpp \
  /opt/ros/humble/include/nav_msgs/nav_msgs/msg/detail/odometry__struct.hpp \
  /opt/ros/humble/include/std_msgs/std_msgs/msg/detail/header__struct.hpp \
@@ -689,5 +689,5 @@ CMakeFiles/dji_driver_node.dir/src/dji_driver_node.cpp.o: \
  /opt/ros/humble/include/tf2/tf2/LinearMath/MinMax.hpp \
  /opt/ros/humble/include/tf2/tf2/visibility_control.h \
  /opt/ros/humble/include/tf2/tf2/LinearMath/QuadWord.hpp \
- /home/nvidia/dji_ws2/DJI_ws/src/dji_driver/include/dji_driver/dji_protocol.hpp \
- /home/nvidia/dji_ws2/DJI_ws/src/dji_driver/include/dji_driver/CRC8_CRC16.h
+ /home/nvidia/DJI_ws/src/dji_driver/include/dji_driver/dji_protocol.hpp \
+ /home/nvidia/DJI_ws/src/dji_driver/include/dji_driver/CRC8_CRC16.h

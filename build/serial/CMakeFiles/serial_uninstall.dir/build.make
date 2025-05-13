@@ -53,10 +53,10 @@ RM = /usr/bin/cmake -E rm -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/nvidia/dji_ws2/DJI_ws/src/serial-ros2
+CMAKE_SOURCE_DIR = /home/nvidia/DJI_ws/src/serial-ros2
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/nvidia/dji_ws2/DJI_ws/build/serial
+CMAKE_BINARY_DIR = /home/nvidia/DJI_ws/build/serial
 
 # Utility rule file for serial_uninstall.
 
@@ -67,7 +67,7 @@ include CMakeFiles/serial_uninstall.dir/compiler_depend.make
 include CMakeFiles/serial_uninstall.dir/progress.make
 
 CMakeFiles/serial_uninstall:
-	/usr/bin/cmake -P /home/nvidia/dji_ws2/DJI_ws/build/serial/ament_cmake_uninstall_target/ament_cmake_uninstall_target.cmake
+	/usr/bin/cmake -P /home/nvidia/DJI_ws/build/serial/ament_cmake_uninstall_target/ament_cmake_uninstall_target.cmake
 
 serial_uninstall: CMakeFiles/serial_uninstall
 serial_uninstall: CMakeFiles/serial_uninstall.dir/build.make
@@ -82,6 +82,6 @@ CMakeFiles/serial_uninstall.dir/clean:
 .PHONY : CMakeFiles/serial_uninstall.dir/clean
 
 CMakeFiles/serial_uninstall.dir/depend:
-	cd /home/nvidia/dji_ws2/DJI_ws/build/serial && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/nvidia/dji_ws2/DJI_ws/src/serial-ros2 /home/nvidia/dji_ws2/DJI_ws/src/serial-ros2 /home/nvidia/dji_ws2/DJI_ws/build/serial /home/nvidia/dji_ws2/DJI_ws/build/serial /home/nvidia/dji_ws2/DJI_ws/build/serial/CMakeFiles/serial_uninstall.dir/DependInfo.cmake --color=$(COLOR)
+	cd /home/nvidia/DJI_ws/build/serial && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/nvidia/DJI_ws/src/serial-ros2 /home/nvidia/DJI_ws/src/serial-ros2 /home/nvidia/DJI_ws/build/serial /home/nvidia/DJI_ws/build/serial /home/nvidia/DJI_ws/build/serial/CMakeFiles/serial_uninstall.dir/DependInfo.cmake --color=$(COLOR)
 .PHONY : CMakeFiles/serial_uninstall.dir/depend
 

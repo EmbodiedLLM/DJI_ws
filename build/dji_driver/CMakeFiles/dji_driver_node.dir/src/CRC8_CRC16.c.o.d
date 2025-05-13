@@ -1,7 +1,7 @@
 CMakeFiles/dji_driver_node.dir/src/CRC8_CRC16.c.o: \
- /home/nvidia/dji_ws2/DJI_ws/src/dji_driver/src/CRC8_CRC16.c \
+ /home/nvidia/DJI_ws/src/dji_driver/src/CRC8_CRC16.c \
  /usr/include/stdc-predef.h \
- /home/nvidia/dji_ws2/DJI_ws/src/dji_driver/include/dji_driver/CRC8_CRC16.h \
+ /home/nvidia/DJI_ws/src/dji_driver/include/dji_driver/CRC8_CRC16.h \
  /usr/lib/gcc/aarch64-linux-gnu/11/include/stdint.h /usr/include/stdint.h \
  /usr/include/aarch64-linux-gnu/bits/libc-header-start.h \
  /usr/include/features.h /usr/include/features-time64.h \
